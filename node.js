@@ -12,7 +12,10 @@ var height = 900;
 
 
 
-
+d3.csv('data/globallikes_obs_atom.csv', function(error, data) {
+	console.log(data[0])
+   if (error) throw error;
+});
 
 
 // var link = d3.select('svg').append("g")
