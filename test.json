@@ -1,0 +1,19 @@
+window.pslviz = window.pslviz || {};
+window.pslviz.nodes = [
+    {
+        "x": 15,
+        "y": 10
+    },
+    {
+        "x": 10,
+        "y": 12
+    },
+    {
+        "x": 1,
+        "y": 2
+    },
+    {
+        "x": 5,
+        "y": 3
+    }
+]
