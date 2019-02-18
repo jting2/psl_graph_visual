@@ -1,0 +1,19 @@
+window.pslviz = window.pslviz || {};
+window.pslviz.links = [
+    {
+        "source": "0, 0",
+        "target": "1, 0",
+        "group": 0
+    },
+    
+    {
+        "source": "0, 2",
+        "target": "1, 0",
+        "group": 0
+    },
+    {
+        "source": "0, 3",
+        "target": "1, 0",
+        "group": 0
+    }
+]
