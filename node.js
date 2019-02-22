@@ -36,11 +36,16 @@ function main() {
 //Tried getting different color for nodes but not working?
 	// var color = d3.scaleOrdinal().range(d3.schemeCategory20);
 
-
+	// var svg = d3.select('#psl_graph')
+	// 				.append('svg')
+	// 				.attr('width', width)
+	// 				.attr('height', height)
 	//Adding the nodes data into the svg
-	var node_svg = d3.select('#psl_graph').attr('width', width)
-			.attr('height', height)
+	var node_svg = d3.select('#psl_graph')
 					.append('svg')
+					.attr('width', width)
+					.attr('height', height)
+					
 
 					.selectAll('g')  
 					.data(nodes)
@@ -49,9 +54,16 @@ function main() {
 
 //adding all link data into 
 	var link = d3.select('#psl_graph')
-				 .append('svg')
-				 .selectAll("line")
- 			 	 .data(links).enter().append("line");
+				 .select('svg')
+				 .selectAll('g')
+				//  .attr('width', width)
+				// .attr('height', height)
+				 .selectAll('line')
+				 .data(links)
+ 			 	 .enter()
+ 			 	 .append("line")
+ 			 	 .attr('stroke', 'blue');
+ 			 	 // .append('g');
 
 //Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
@@ -63,12 +75,13 @@ function main() {
 
 //turning ticks on
 
-simulation.nodes(nodes)
-      	  .on("tick", ticked);
-
+simulation.nodes(nodes);
 //including the link
 simulation.force("link")
       	  .links(links);
+
+simulation.on("tick", ticked);
+
 
 //This function is called to update position of node-link
 function ticked() {
@@ -78,29 +91,14 @@ function ticked() {
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
 
-    node_svg
-        .attr("cx", function(d) {
-          return d.x;
+
+   
+   circles
+        .attr("transform", function(d) {
+          return "translate(" + d.x + "," + d.y + ")";
         })
-        .attr("cy", function(d){
-        	return d.y;
-        });
   };
 
 
 
-
-
-	// node_svg.selectAll('.line')
-	// 		.data(links)
-	// 		.enter()
-	// 		.append('line')
-	// 		.attr("x1", function(d) { return d.source.x })
-	//    		.attr("y1", function(d) { return d.source.y })
-	//    		.attr("x2", function(d) { return d.target.x })
-	//    		.attr("y2", function(d) { return d.target.y })
-	//    		.style("stroke", "rgb(6,120,155)");
-
-	// Made for dragging?
-	     	// .call(d3.drag().on("drag", mousemove));
 }
