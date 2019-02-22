@@ -17,6 +17,9 @@ function main() {
 //https://beta.observablehq.com/@mbostock/disjoint-force-directed-graph
 
 
+// https://bost.ocks.org/mike/selection/ (See how select works)
+
+
 	// var link = d3.select('svg').append("g")
 	//   .attr("class", "links")
 	//   .selectAll("line")
