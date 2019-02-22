@@ -11,10 +11,15 @@ function main() {
 	var height = 900;
 
 
+var color = d3.scaleOrdinal(d3.schemeAccent);
+var svg = d3.select("#psl_graph").append("svg")
+    .attr("width", width)
+    .attr("height", height);
 //https://medium.com/@sxywu/understanding-the-force-ef1237017d5
 //https://medium.com/@bryony_17728/d3-js-two-v-4-network-charts-compared-8d3c66b0499c
 //https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
 //https://beta.observablehq.com/@mbostock/disjoint-force-directed-graph
+// https://bl.ocks.org/mbostock/950642
 
 
 // https://bost.ocks.org/mike/selection/ (See how select works)
@@ -44,32 +49,22 @@ function main() {
 	// 				.attr('width', width)
 	// 				.attr('height', height)
 	//Adding the nodes data into the svg
-	var node_svg = d3.select('#psl_graph')
-					.append('svg')
-					.attr('width', width)
-					.attr('height', height)
-					
-
+	var node_svg = svg
 					.selectAll('g')  
 					.data(nodes)
 					.enter()
 					.append('g'); //g is used to group SVG shapes together. (In this case node and link)
 
 //adding all link data into 
-	var link = d3.select('#psl_graph')
-				 .select('svg')
-				 .selectAll('g')
-				//  .attr('width', width)
-				// .attr('height', height)
-				 .selectAll('line')
-				 .data(links)
- 			 	 .enter()
- 			 	 .append("line")
- 			 	 .attr('stroke', 'blue');
- 			 	 // .append('g');
+	 var link = svg
+	 				.selectAll(".link")
+      .data(links)
+    .enter().append("line")
+      .attr("class", "link");
 
 //Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
+					.attr("fill", function(d) { return color(d.group); })
 					.attr('r', 10);
 					// .attr("fill", function(d) { return color(d.group); });
 	console.log(circles);
