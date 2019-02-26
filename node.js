@@ -7,8 +7,8 @@ function main() {
 
 	var links = window.pslviz.links;
 
-	var width = 900;
-	var height = 900;
+	var width = 2000;
+	var height = 2000;
 
 
 var color = d3.scaleOrdinal(d3.schemeAccent);
@@ -36,7 +36,7 @@ var svg = d3.select("#psl_graph").append("svg")
 	var simulation = d3.forceSimulation()
 					.force('charge', d3.forceManyBody())	//causes all elements to attract or repel one another
   	  			    .force('center', d3.forceCenter(width / 2, height / 2)) //centering your elements as a whole about a center point (So it doesnt disappear off the page)
-  	  			    .force("link", d3.forceLink().id(function(d) { return d.id; })); //pushes linked elements to be a fixed distance apart
+  	  			    .force("link", d3.forceLink().id(function(d) { return d.rule; })); //pushes linked elements to be a fixed distance apart
   				
 
 
@@ -49,6 +49,7 @@ var svg = d3.select("#psl_graph").append("svg")
 	// 				.attr('width', width)
 	// 				.attr('height', height)
 	//Adding the nodes data into the svg
+
 	var node_svg = svg
 					.selectAll('g')  
 					.data(nodes)
@@ -56,18 +57,18 @@ var svg = d3.select("#psl_graph").append("svg")
 					.append('g'); //g is used to group SVG shapes together. (In this case node and link)
 
 //adding all link data into 
-	 var link = svg
-	 				.selectAll(".link")
-      .data(links)
-    .enter().append("line")
-      .attr("class", "link");
+	 var link = svg.selectAll(".link")
+      				.data(links)
+    				.enter()
+    				.append("line")
+      				.attr("class", "link");
 
 //Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
 					.attr("fill", function(d) { return color(d.group); })
 					.attr('r', 10);
 					// .attr("fill", function(d) { return color(d.group); });
-	console.log(circles);
+	// console.log(circles);
 
 
 
