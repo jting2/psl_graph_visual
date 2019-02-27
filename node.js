@@ -7,41 +7,38 @@ function main() {
 
 	var links = window.pslviz.links;
 
-	var width = 2000;
-	var height = 2000;
+	var width = 3000;
+	var height = 3000;
 
 
-var color = d3.scaleOrdinal(d3.schemeAccent);
-var svg = d3.select("#psl_graph").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-//https://medium.com/@sxywu/understanding-the-force-ef1237017d5
-//https://medium.com/@bryony_17728/d3-js-two-v-4-network-charts-compared-8d3c66b0499c
-//https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
-//https://beta.observablehq.com/@mbostock/disjoint-force-directed-graph
-// https://bl.ocks.org/mbostock/950642
+	var color = d3.scaleOrdinal(d3.schemeAccent);
+	var svg = d3.select("#psl_graph")
+			.append("svg")
+    		.attr("width", width)
+    		.attr("height", height);
+	// https://medium.com/@sxywu/understanding-the-force-ef1237017d5
+	// https://medium.com/@bryony_17728/d3-js-two-v-4-network-charts-compared-8d3c66b0499c
+	// https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
+	// https://beta.observablehq.com/@mbostock/disjoint-force-directed-graph
+	// https://bl.ocks.org/mbostock/950642
 
 
-// https://bost.ocks.org/mike/selection/ (See how select works)
+	// https://bost.ocks.org/mike/selection/ (See how select works)
 
+	var chargeForce = d3.forceManyBody()
+			.strength(function() { return -1000; })
+			.distanceMin(1)
+			.distanceMax(10000);
 
-	// var link = d3.select('svg').append("g")
-	//   .attr("class", "links")
-	//   .selectAll("line")
-	//  // .data(graph.links)
-	//  // .enter().append("line")
-	//   .attr("stroke-width", 50);
-
-//Need to make so I wont have to have specific x and y value (Used to create a force graph)
+	// Need to make so I wont have to have specific x and y value (Used to create a force graph)
 	var simulation = d3.forceSimulation()
-					.force('charge', d3.forceManyBody())	//causes all elements to attract or repel one another
-  	  			    .force('center', d3.forceCenter(width / 2, height / 2)) //centering your elements as a whole about a center point (So it doesnt disappear off the page)
-  	  			    .force("link", d3.forceLink().id(function(d) { return d.rule; })); //pushes linked elements to be a fixed distance apart
-  				
+					.force('charge', chargeForce)  // causes all elements to attract or repel one another
+  	  			    .force('center', d3.forceCenter(width / 2, height / 2))  // centering your elements as a whole about a center point (So it doesnt disappear off the page)
+  	  			    .force("link", d3.forceLink().id(function(d) { return d.rule; })); 
 
 
 
-//Tried getting different color for nodes but not working?
+	// Tried getting different color for nodes but not working?
 	// var color = d3.scaleOrdinal().range(d3.schemeCategory20);
 
 	// var svg = d3.select('#psl_graph')

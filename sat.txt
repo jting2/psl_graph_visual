@@ -1,0 +1,906 @@
+Weight	Squared?	Rule	Satisfaction
+5.0	true	( ~( KNOWS('Dhanya', 'Alex') ) | ~( KNOWS('Ben', 'Dhanya') ) | KNOWS('Ben', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Sabina') ) | ~( KNOWS('Ben', 'Elena') ) | KNOWS('Ben', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Alex') ) | ~( KNOWS('Ben', 'Elena') ) | KNOWS('Ben', 'Alex') )	0.9852958275005221
+5.0	true	( ~( KNOWS('Elena', 'Steve') ) | ~( KNOWS('Ben', 'Elena') ) | KNOWS('Ben', 'Steve') )	0.9968897991348058
+5.0	true	( ~( KNOWS('Elena', 'Arti') ) | ~( KNOWS('Ben', 'Elena') ) | KNOWS('Ben', 'Arti') )	0.999052278639283
+5.0	true	( ~( KNOWS('Dhanya', 'Arti') ) | ~( KNOWS('Ben', 'Dhanya') ) | KNOWS('Ben', 'Arti') )	0.998391599743627
+5.0	true	( ~( KNOWS('Elena', 'Jay') ) | ~( KNOWS('Ben', 'Elena') ) | KNOWS('Ben', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Jay') ) | ~( KNOWS('Ben', 'Dhanya') ) | KNOWS('Ben', 'Jay') )	0.9994199967477471
+5.0	true	( ~( KNOWS('Dhanya', 'Sabina') ) | ~( KNOWS('Ben', 'Dhanya') ) | KNOWS('Ben', 'Sabina') )	0.7091349065303802
+5.0	true	( ~( KNOWS('Dhanya', 'Steve') ) | ~( KNOWS('Ben', 'Dhanya') ) | KNOWS('Ben', 'Steve') )	0.9967448872048408
+5.0	true	( ~( KNOWS('Alex', 'Ben') ) | ~( KNOWS('Arti', 'Alex') ) | KNOWS('Arti', 'Ben') )	0.9883017838001251
+5.0	true	( ~( KNOWS('Alex', 'Elena') ) | ~( KNOWS('Arti', 'Alex') ) | KNOWS('Arti', 'Elena') )	0.961056612432003
+5.0	true	( ~( KNOWS('Alex', 'Dhanya') ) | ~( KNOWS('Arti', 'Alex') ) | KNOWS('Arti', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Jay') ) | ~( KNOWS('Arti', 'Alex') ) | KNOWS('Arti', 'Jay') )	0.983275081962347
+5.0	true	( ~( KNOWS('Alex', 'Sabina') ) | ~( KNOWS('Arti', 'Alex') ) | KNOWS('Arti', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Alex') ) | ~( KNOWS('Sabina', 'Dhanya') ) | KNOWS('Sabina', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Steve') ) | ~( KNOWS('Arti', 'Alex') ) | KNOWS('Arti', 'Steve') )	0.9914452992379665
+5.0	true	( ~( KNOWS('Dhanya', 'Arti') ) | ~( KNOWS('Sabina', 'Dhanya') ) | KNOWS('Sabina', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Ben') ) | ~( KNOWS('Sabina', 'Dhanya') ) | KNOWS('Sabina', 'Ben') )	0.7175630927085876
+5.0	true	( ~( KNOWS('Dhanya', 'Jay') ) | ~( KNOWS('Sabina', 'Dhanya') ) | KNOWS('Sabina', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Alex') ) | ~( KNOWS('Elena', 'Steve') ) | KNOWS('Elena', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Steve') ) | ~( KNOWS('Sabina', 'Dhanya') ) | KNOWS('Sabina', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Arti') ) | ~( KNOWS('Elena', 'Steve') ) | KNOWS('Elena', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Ben') ) | ~( KNOWS('Elena', 'Steve') ) | KNOWS('Elena', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Jay') ) | ~( KNOWS('Elena', 'Steve') ) | KNOWS('Elena', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Dhanya') ) | ~( KNOWS('Elena', 'Steve') ) | KNOWS('Elena', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Sabina') ) | ~( KNOWS('Elena', 'Steve') ) | KNOWS('Elena', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Arti') ) | ~( KNOWS('Elena', 'Jay') ) | KNOWS('Elena', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Alex') ) | ~( KNOWS('Elena', 'Jay') ) | KNOWS('Elena', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Dhanya') ) | ~( KNOWS('Elena', 'Jay') ) | KNOWS('Elena', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Steve') ) | ~( KNOWS('Elena', 'Jay') ) | KNOWS('Elena', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Arti') ) | ~( KNOWS('Elena', 'Ben') ) | KNOWS('Elena', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Alex') ) | ~( KNOWS('Elena', 'Ben') ) | KNOWS('Elena', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Dhanya') ) | ~( KNOWS('Elena', 'Ben') ) | KNOWS('Elena', 'Dhanya') )	0.6127872467041016
+5.0	true	( ~( KNOWS('Ben', 'Jay') ) | ~( KNOWS('Elena', 'Ben') ) | KNOWS('Elena', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Sabina') ) | ~( KNOWS('Elena', 'Ben') ) | KNOWS('Elena', 'Sabina') )	0.9859349140897393
+5.0	true	( ~( KNOWS('Alex', 'Arti') ) | ~( KNOWS('Elena', 'Alex') ) | KNOWS('Elena', 'Arti') )	0.9626448750495911
+5.0	true	( ~( KNOWS('Ben', 'Steve') ) | ~( KNOWS('Elena', 'Ben') ) | KNOWS('Elena', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Dhanya') ) | ~( KNOWS('Elena', 'Alex') ) | KNOWS('Elena', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Ben') ) | ~( KNOWS('Elena', 'Alex') ) | KNOWS('Elena', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Jay') ) | ~( KNOWS('Elena', 'Alex') ) | KNOWS('Elena', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Sabina') ) | ~( KNOWS('Elena', 'Alex') ) | KNOWS('Elena', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Steve') ) | ~( KNOWS('Elena', 'Alex') ) | KNOWS('Elena', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Alex') ) | ~( KNOWS('Elena', 'Arti') ) | KNOWS('Elena', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Ben') ) | ~( KNOWS('Elena', 'Arti') ) | KNOWS('Elena', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Dhanya') ) | ~( KNOWS('Elena', 'Arti') ) | KNOWS('Elena', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Jay') ) | ~( KNOWS('Elena', 'Arti') ) | KNOWS('Elena', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Steve') ) | ~( KNOWS('Elena', 'Arti') ) | KNOWS('Elena', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Sabina') ) | ~( KNOWS('Elena', 'Arti') ) | KNOWS('Elena', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Alex') ) | ~( KNOWS('Elena', 'Dhanya') ) | KNOWS('Elena', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Jay') ) | ~( KNOWS('Elena', 'Dhanya') ) | KNOWS('Elena', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Sabina') ) | ~( KNOWS('Elena', 'Dhanya') ) | KNOWS('Elena', 'Sabina') )	0.9987289914861321
+5.0	true	( ~( KNOWS('Dhanya', 'Ben') ) | ~( KNOWS('Elena', 'Dhanya') ) | KNOWS('Elena', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Steve') ) | ~( KNOWS('Elena', 'Dhanya') ) | KNOWS('Elena', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Alex') ) | ~( KNOWS('Elena', 'Sabina') ) | KNOWS('Elena', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Arti') ) | ~( KNOWS('Elena', 'Sabina') ) | KNOWS('Elena', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Ben') ) | ~( KNOWS('Elena', 'Sabina') ) | KNOWS('Elena', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Dhanya') ) | ~( KNOWS('Elena', 'Sabina') ) | KNOWS('Elena', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Jay') ) | ~( KNOWS('Elena', 'Sabina') ) | KNOWS('Elena', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Steve') ) | ~( KNOWS('Elena', 'Sabina') ) | KNOWS('Elena', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Alex') ) | ~( KNOWS('Steve', 'Elena') ) | KNOWS('Steve', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Sabina') ) | ~( KNOWS('Elena', 'Jay') ) | KNOWS('Elena', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Ben') ) | ~( KNOWS('Steve', 'Elena') ) | KNOWS('Steve', 'Ben') )	0.9979662369005382
+5.0	true	( ~( KNOWS('Elena', 'Arti') ) | ~( KNOWS('Steve', 'Elena') ) | KNOWS('Steve', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Dhanya') ) | ~( KNOWS('Steve', 'Elena') ) | KNOWS('Steve', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Jay') ) | ~( KNOWS('Steve', 'Elena') ) | KNOWS('Steve', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Alex') ) | ~( KNOWS('Steve', 'Jay') ) | KNOWS('Steve', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Sabina') ) | ~( KNOWS('Steve', 'Elena') ) | KNOWS('Steve', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Arti') ) | ~( KNOWS('Steve', 'Jay') ) | KNOWS('Steve', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Ben') ) | ~( KNOWS('Steve', 'Jay') ) | KNOWS('Steve', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Elena') ) | ~( KNOWS('Steve', 'Jay') ) | KNOWS('Steve', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Dhanya') ) | ~( KNOWS('Steve', 'Jay') ) | KNOWS('Steve', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Sabina') ) | ~( KNOWS('Steve', 'Jay') ) | KNOWS('Steve', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Alex') ) | ~( KNOWS('Steve', 'Ben') ) | KNOWS('Steve', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Dhanya') ) | ~( KNOWS('Steve', 'Ben') ) | KNOWS('Steve', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Arti') ) | ~( KNOWS('Steve', 'Ben') ) | KNOWS('Steve', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Elena') ) | ~( KNOWS('Steve', 'Ben') ) | KNOWS('Steve', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Sabina') ) | ~( KNOWS('Steve', 'Ben') ) | KNOWS('Steve', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Jay') ) | ~( KNOWS('Steve', 'Ben') ) | KNOWS('Steve', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Arti') ) | ~( KNOWS('Steve', 'Alex') ) | KNOWS('Steve', 'Arti') )	0.9921993324533105
+5.0	true	( ~( KNOWS('Alex', 'Dhanya') ) | ~( KNOWS('Steve', 'Alex') ) | KNOWS('Steve', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Ben') ) | ~( KNOWS('Steve', 'Alex') ) | KNOWS('Steve', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Elena') ) | ~( KNOWS('Steve', 'Alex') ) | KNOWS('Steve', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Jay') ) | ~( KNOWS('Steve', 'Alex') ) | KNOWS('Steve', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Sabina') ) | ~( KNOWS('Steve', 'Alex') ) | KNOWS('Steve', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Alex') ) | ~( KNOWS('Steve', 'Arti') ) | KNOWS('Steve', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Ben') ) | ~( KNOWS('Steve', 'Arti') ) | KNOWS('Steve', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Dhanya') ) | ~( KNOWS('Steve', 'Arti') ) | KNOWS('Steve', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Elena') ) | ~( KNOWS('Steve', 'Arti') ) | KNOWS('Steve', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Jay') ) | ~( KNOWS('Steve', 'Arti') ) | KNOWS('Steve', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Sabina') ) | ~( KNOWS('Steve', 'Arti') ) | KNOWS('Steve', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Alex') ) | ~( KNOWS('Steve', 'Dhanya') ) | KNOWS('Steve', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Arti') ) | ~( KNOWS('Steve', 'Dhanya') ) | KNOWS('Steve', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Arti') ) | ~( KNOWS('Elena', 'Dhanya') ) | KNOWS('Elena', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Elena') ) | ~( KNOWS('Steve', 'Dhanya') ) | KNOWS('Steve', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Ben') ) | ~( KNOWS('Elena', 'Jay') ) | KNOWS('Elena', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Ben') ) | ~( KNOWS('Steve', 'Dhanya') ) | KNOWS('Steve', 'Ben') )	0.9979574189055711
+5.0	true	( ~( KNOWS('Dhanya', 'Jay') ) | ~( KNOWS('Steve', 'Dhanya') ) | KNOWS('Steve', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Sabina') ) | ~( KNOWS('Steve', 'Dhanya') ) | KNOWS('Steve', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Alex') ) | ~( KNOWS('Steve', 'Sabina') ) | KNOWS('Steve', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Elena') ) | ~( KNOWS('Sabina', 'Dhanya') ) | KNOWS('Sabina', 'Elena') )	0.9983348902314901
+5.0	true	( ~( KNOWS('Sabina', 'Arti') ) | ~( KNOWS('Steve', 'Sabina') ) | KNOWS('Steve', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Ben') ) | ~( KNOWS('Steve', 'Sabina') ) | KNOWS('Steve', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Dhanya') ) | ~( KNOWS('Steve', 'Sabina') ) | KNOWS('Steve', 'Dhanya') )	0.9997152515279595
+5.0	true	( ~( KNOWS('Sabina', 'Elena') ) | ~( KNOWS('Steve', 'Sabina') ) | KNOWS('Steve', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Jay') ) | ~( KNOWS('Steve', 'Sabina') ) | KNOWS('Steve', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Alex') ) | ~( KNOWS('Jay', 'Elena') ) | KNOWS('Jay', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Arti') ) | ~( KNOWS('Jay', 'Elena') ) | KNOWS('Jay', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Ben') ) | ~( KNOWS('Jay', 'Elena') ) | KNOWS('Jay', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Dhanya') ) | ~( KNOWS('Jay', 'Elena') ) | KNOWS('Jay', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Sabina') ) | ~( KNOWS('Jay', 'Elena') ) | KNOWS('Jay', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Alex') ) | ~( KNOWS('Jay', 'Steve') ) | KNOWS('Jay', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Steve') ) | ~( KNOWS('Jay', 'Elena') ) | KNOWS('Jay', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Ben') ) | ~( KNOWS('Jay', 'Steve') ) | KNOWS('Jay', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Arti') ) | ~( KNOWS('Jay', 'Steve') ) | KNOWS('Jay', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Dhanya') ) | ~( KNOWS('Jay', 'Steve') ) | KNOWS('Jay', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Elena') ) | ~( KNOWS('Jay', 'Steve') ) | KNOWS('Jay', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Sabina') ) | ~( KNOWS('Jay', 'Steve') ) | KNOWS('Jay', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Alex') ) | ~( KNOWS('Jay', 'Ben') ) | KNOWS('Jay', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Arti') ) | ~( KNOWS('Jay', 'Ben') ) | KNOWS('Jay', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Elena') ) | ~( KNOWS('Jay', 'Ben') ) | KNOWS('Jay', 'Elena') )	0.9999971500403717
+5.0	true	( ~( KNOWS('Ben', 'Dhanya') ) | ~( KNOWS('Jay', 'Ben') ) | KNOWS('Jay', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Arti') ) | ~( KNOWS('Jay', 'Alex') ) | KNOWS('Jay', 'Arti') )	0.9843981629237533
+5.0	true	( ~( KNOWS('Ben', 'Steve') ) | ~( KNOWS('Jay', 'Ben') ) | KNOWS('Jay', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Sabina') ) | ~( KNOWS('Jay', 'Ben') ) | KNOWS('Jay', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Ben') ) | ~( KNOWS('Jay', 'Alex') ) | KNOWS('Jay', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Dhanya') ) | ~( KNOWS('Jay', 'Alex') ) | KNOWS('Jay', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Sabina') ) | ~( KNOWS('Jay', 'Alex') ) | KNOWS('Jay', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Elena') ) | ~( KNOWS('Jay', 'Alex') ) | KNOWS('Jay', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Steve') ) | ~( KNOWS('Jay', 'Alex') ) | KNOWS('Jay', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Alex') ) | ~( KNOWS('Jay', 'Arti') ) | KNOWS('Jay', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Dhanya') ) | ~( KNOWS('Jay', 'Arti') ) | KNOWS('Jay', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Ben') ) | ~( KNOWS('Jay', 'Arti') ) | KNOWS('Jay', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Sabina') ) | ~( KNOWS('Jay', 'Arti') ) | KNOWS('Jay', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Elena') ) | ~( KNOWS('Jay', 'Arti') ) | KNOWS('Jay', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Steve') ) | ~( KNOWS('Jay', 'Arti') ) | KNOWS('Jay', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Alex') ) | ~( KNOWS('Jay', 'Dhanya') ) | KNOWS('Jay', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Arti') ) | ~( KNOWS('Jay', 'Dhanya') ) | KNOWS('Jay', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Ben') ) | ~( KNOWS('Jay', 'Dhanya') ) | KNOWS('Jay', 'Ben') )	0.999823363541509
+5.0	true	( ~( KNOWS('Dhanya', 'Elena') ) | ~( KNOWS('Jay', 'Dhanya') ) | KNOWS('Jay', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Sabina') ) | ~( KNOWS('Jay', 'Dhanya') ) | KNOWS('Jay', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Steve') ) | ~( KNOWS('Jay', 'Dhanya') ) | KNOWS('Jay', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Dhanya') ) | ~( KNOWS('Jay', 'Sabina') ) | KNOWS('Jay', 'Dhanya') )	0.9931490942835808
+5.0	true	( ~( KNOWS('Sabina', 'Arti') ) | ~( KNOWS('Jay', 'Sabina') ) | KNOWS('Jay', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Alex') ) | ~( KNOWS('Jay', 'Sabina') ) | KNOWS('Jay', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Ben') ) | ~( KNOWS('Jay', 'Sabina') ) | KNOWS('Jay', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Elena') ) | ~( KNOWS('Jay', 'Sabina') ) | KNOWS('Jay', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Steve') ) | ~( KNOWS('Jay', 'Sabina') ) | KNOWS('Jay', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Arti') ) | ~( KNOWS('Ben', 'Steve') ) | KNOWS('Ben', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Alex') ) | ~( KNOWS('Ben', 'Steve') ) | KNOWS('Ben', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Jay') ) | ~( KNOWS('Ben', 'Steve') ) | KNOWS('Ben', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Sabina') ) | ~( KNOWS('Ben', 'Steve') ) | KNOWS('Ben', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Alex') ) | ~( KNOWS('Ben', 'Jay') ) | KNOWS('Ben', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Arti') ) | ~( KNOWS('Ben', 'Jay') ) | KNOWS('Ben', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Sabina') ) | ~( KNOWS('Ben', 'Jay') ) | KNOWS('Ben', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Arti') ) | ~( KNOWS('Ben', 'Alex') ) | KNOWS('Ben', 'Arti') )	0.9894323535263538
+5.0	true	( ~( KNOWS('Alex', 'Jay') ) | ~( KNOWS('Ben', 'Alex') ) | KNOWS('Ben', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Steve') ) | ~( KNOWS('Ben', 'Jay') ) | KNOWS('Ben', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Sabina') ) | ~( KNOWS('Ben', 'Alex') ) | KNOWS('Ben', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Alex') ) | ~( KNOWS('Ben', 'Arti') ) | KNOWS('Ben', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Steve') ) | ~( KNOWS('Ben', 'Alex') ) | KNOWS('Ben', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Jay') ) | ~( KNOWS('Ben', 'Arti') ) | KNOWS('Ben', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Sabina') ) | ~( KNOWS('Ben', 'Arti') ) | KNOWS('Ben', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Alex') ) | ~( KNOWS('Ben', 'Sabina') ) | KNOWS('Ben', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Jay') ) | ~( KNOWS('Ben', 'Sabina') ) | KNOWS('Ben', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Steve') ) | ~( KNOWS('Ben', 'Sabina') ) | KNOWS('Ben', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Ben') ) | ~( KNOWS('Alex', 'Elena') ) | KNOWS('Alex', 'Ben') )	0.9879627656191587
+5.0	true	( ~( KNOWS('Elena', 'Arti') ) | ~( KNOWS('Alex', 'Elena') ) | KNOWS('Alex', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Jay') ) | ~( KNOWS('Alex', 'Elena') ) | KNOWS('Alex', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Dhanya') ) | ~( KNOWS('Alex', 'Elena') ) | KNOWS('Alex', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Arti') ) | ~( KNOWS('Ben', 'Sabina') ) | KNOWS('Ben', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Sabina') ) | ~( KNOWS('Alex', 'Elena') ) | KNOWS('Alex', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Steve') ) | ~( KNOWS('Alex', 'Elena') ) | KNOWS('Alex', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Arti') ) | ~( KNOWS('Alex', 'Steve') ) | KNOWS('Alex', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Dhanya') ) | ~( KNOWS('Alex', 'Steve') ) | KNOWS('Alex', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Elena') ) | ~( KNOWS('Alex', 'Steve') ) | KNOWS('Alex', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Ben') ) | ~( KNOWS('Alex', 'Steve') ) | KNOWS('Alex', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Jay') ) | ~( KNOWS('Alex', 'Steve') ) | KNOWS('Alex', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Sabina') ) | ~( KNOWS('Alex', 'Steve') ) | KNOWS('Alex', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Ben') ) | ~( KNOWS('Alex', 'Jay') ) | KNOWS('Alex', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Dhanya') ) | ~( KNOWS('Alex', 'Jay') ) | KNOWS('Alex', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Elena') ) | ~( KNOWS('Alex', 'Jay') ) | KNOWS('Alex', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Steve') ) | ~( KNOWS('Ben', 'Arti') ) | KNOWS('Ben', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Steve') ) | ~( KNOWS('Alex', 'Jay') ) | KNOWS('Alex', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Sabina') ) | ~( KNOWS('Alex', 'Jay') ) | KNOWS('Alex', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Arti') ) | ~( KNOWS('Alex', 'Ben') ) | KNOWS('Alex', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Dhanya') ) | ~( KNOWS('Alex', 'Ben') ) | KNOWS('Alex', 'Dhanya') )	0.9890840295702219
+5.0	true	( ~( KNOWS('Ben', 'Jay') ) | ~( KNOWS('Alex', 'Ben') ) | KNOWS('Alex', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Elena') ) | ~( KNOWS('Alex', 'Ben') ) | KNOWS('Alex', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Sabina') ) | ~( KNOWS('Alex', 'Ben') ) | KNOWS('Alex', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Steve') ) | ~( KNOWS('Alex', 'Ben') ) | KNOWS('Alex', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Ben') ) | ~( KNOWS('Alex', 'Arti') ) | KNOWS('Alex', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Elena') ) | ~( KNOWS('Alex', 'Arti') ) | KNOWS('Alex', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Dhanya') ) | ~( KNOWS('Alex', 'Arti') ) | KNOWS('Alex', 'Dhanya') )	0.9990126810735092
+5.0	true	( ~( KNOWS('Arti', 'Jay') ) | ~( KNOWS('Alex', 'Arti') ) | KNOWS('Alex', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Sabina') ) | ~( KNOWS('Alex', 'Arti') ) | KNOWS('Alex', 'Sabina') )	0.9812411833554506
+5.0	true	( ~( KNOWS('Arti', 'Steve') ) | ~( KNOWS('Alex', 'Arti') ) | KNOWS('Alex', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Arti') ) | ~( KNOWS('Alex', 'Dhanya') ) | KNOWS('Alex', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Ben') ) | ~( KNOWS('Alex', 'Dhanya') ) | KNOWS('Alex', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Elena') ) | ~( KNOWS('Alex', 'Dhanya') ) | KNOWS('Alex', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Jay') ) | ~( KNOWS('Alex', 'Dhanya') ) | KNOWS('Alex', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Arti') ) | ~( KNOWS('Alex', 'Sabina') ) | KNOWS('Alex', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Steve') ) | ~( KNOWS('Alex', 'Dhanya') ) | KNOWS('Alex', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Sabina') ) | ~( KNOWS('Alex', 'Dhanya') ) | KNOWS('Alex', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Ben') ) | ~( KNOWS('Alex', 'Sabina') ) | KNOWS('Alex', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Jay') ) | ~( KNOWS('Alex', 'Sabina') ) | KNOWS('Alex', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Elena') ) | ~( KNOWS('Alex', 'Sabina') ) | KNOWS('Alex', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Dhanya') ) | ~( KNOWS('Alex', 'Sabina') ) | KNOWS('Alex', 'Dhanya') )	0.9916857406497002
+5.0	true	( ~( KNOWS('Sabina', 'Steve') ) | ~( KNOWS('Alex', 'Sabina') ) | KNOWS('Alex', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Dhanya') ) | ~( KNOWS('Arti', 'Elena') ) | KNOWS('Arti', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Ben') ) | ~( KNOWS('Arti', 'Elena') ) | KNOWS('Arti', 'Ben') )	0.9995784438215196
+5.0	true	( ~( KNOWS('Elena', 'Jay') ) | ~( KNOWS('Arti', 'Elena') ) | KNOWS('Arti', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Steve') ) | ~( KNOWS('Arti', 'Elena') ) | KNOWS('Arti', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Sabina') ) | ~( KNOWS('Arti', 'Elena') ) | KNOWS('Arti', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Ben') ) | ~( KNOWS('Arti', 'Steve') ) | KNOWS('Arti', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Dhanya') ) | ~( KNOWS('Arti', 'Steve') ) | KNOWS('Arti', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Jay') ) | ~( KNOWS('Arti', 'Steve') ) | KNOWS('Arti', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Elena') ) | ~( KNOWS('Arti', 'Steve') ) | KNOWS('Arti', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Sabina') ) | ~( KNOWS('Arti', 'Steve') ) | KNOWS('Arti', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Ben') ) | ~( KNOWS('Arti', 'Jay') ) | KNOWS('Arti', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Dhanya') ) | ~( KNOWS('Arti', 'Jay') ) | KNOWS('Arti', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Sabina') ) | ~( KNOWS('Arti', 'Jay') ) | KNOWS('Arti', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Steve') ) | ~( KNOWS('Arti', 'Jay') ) | KNOWS('Arti', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Dhanya') ) | ~( KNOWS('Arti', 'Ben') ) | KNOWS('Arti', 'Dhanya') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Elena') ) | ~( KNOWS('Arti', 'Ben') ) | KNOWS('Arti', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Jay') ) | ~( KNOWS('Arti', 'Ben') ) | KNOWS('Arti', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Sabina') ) | ~( KNOWS('Arti', 'Ben') ) | KNOWS('Arti', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Arti') ) | ~( KNOWS('Alex', 'Jay') ) | KNOWS('Alex', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Steve') ) | ~( KNOWS('Arti', 'Ben') ) | KNOWS('Arti', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Elena') ) | ~( KNOWS('Arti', 'Jay') ) | KNOWS('Arti', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Ben') ) | ~( KNOWS('Arti', 'Dhanya') ) | KNOWS('Arti', 'Ben') )	0.9991767379688099
+5.0	true	( ~( KNOWS('Dhanya', 'Elena') ) | ~( KNOWS('Arti', 'Dhanya') ) | KNOWS('Arti', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Jay') ) | ~( KNOWS('Arti', 'Dhanya') ) | KNOWS('Arti', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Sabina') ) | ~( KNOWS('Arti', 'Dhanya') ) | KNOWS('Arti', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Dhanya', 'Steve') ) | ~( KNOWS('Arti', 'Dhanya') ) | KNOWS('Arti', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Ben') ) | ~( KNOWS('Arti', 'Sabina') ) | KNOWS('Arti', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Dhanya') ) | ~( KNOWS('Arti', 'Sabina') ) | KNOWS('Arti', 'Dhanya') )	0.9612997621297836
+5.0	true	( ~( KNOWS('Sabina', 'Elena') ) | ~( KNOWS('Arti', 'Sabina') ) | KNOWS('Arti', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Jay') ) | ~( KNOWS('Arti', 'Sabina') ) | KNOWS('Arti', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Steve') ) | ~( KNOWS('Arti', 'Sabina') ) | KNOWS('Arti', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Alex') ) | ~( KNOWS('Dhanya', 'Elena') ) | KNOWS('Dhanya', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Arti') ) | ~( KNOWS('Dhanya', 'Elena') ) | KNOWS('Dhanya', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Ben') ) | ~( KNOWS('Dhanya', 'Elena') ) | KNOWS('Dhanya', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Sabina') ) | ~( KNOWS('Dhanya', 'Elena') ) | KNOWS('Dhanya', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Jay') ) | ~( KNOWS('Dhanya', 'Elena') ) | KNOWS('Dhanya', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Steve') ) | ~( KNOWS('Dhanya', 'Elena') ) | KNOWS('Dhanya', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Alex') ) | ~( KNOWS('Dhanya', 'Steve') ) | KNOWS('Dhanya', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Arti') ) | ~( KNOWS('Dhanya', 'Steve') ) | KNOWS('Dhanya', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Elena') ) | ~( KNOWS('Dhanya', 'Steve') ) | KNOWS('Dhanya', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Ben') ) | ~( KNOWS('Dhanya', 'Steve') ) | KNOWS('Dhanya', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Jay') ) | ~( KNOWS('Dhanya', 'Steve') ) | KNOWS('Dhanya', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Alex') ) | ~( KNOWS('Dhanya', 'Jay') ) | KNOWS('Dhanya', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Sabina') ) | ~( KNOWS('Dhanya', 'Steve') ) | KNOWS('Dhanya', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Arti') ) | ~( KNOWS('Dhanya', 'Jay') ) | KNOWS('Dhanya', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Steve') ) | ~( KNOWS('Dhanya', 'Jay') ) | KNOWS('Dhanya', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Ben') ) | ~( KNOWS('Dhanya', 'Jay') ) | KNOWS('Dhanya', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Sabina') ) | ~( KNOWS('Dhanya', 'Jay') ) | KNOWS('Dhanya', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Elena') ) | ~( KNOWS('Dhanya', 'Jay') ) | KNOWS('Dhanya', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Elena') ) | ~( KNOWS('Dhanya', 'Ben') ) | KNOWS('Dhanya', 'Elena') )	0.6144331097602844
+5.0	true	( ~( KNOWS('Ben', 'Alex') ) | ~( KNOWS('Dhanya', 'Ben') ) | KNOWS('Dhanya', 'Alex') )	0.9916447112336755
+5.0	true	( ~( KNOWS('Ben', 'Arti') ) | ~( KNOWS('Dhanya', 'Ben') ) | KNOWS('Dhanya', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Jay') ) | ~( KNOWS('Dhanya', 'Ben') ) | KNOWS('Dhanya', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Sabina') ) | ~( KNOWS('Dhanya', 'Ben') ) | KNOWS('Dhanya', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Arti') ) | ~( KNOWS('Dhanya', 'Alex') ) | KNOWS('Dhanya', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Ben') ) | ~( KNOWS('Dhanya', 'Alex') ) | KNOWS('Dhanya', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Steve') ) | ~( KNOWS('Dhanya', 'Ben') ) | KNOWS('Dhanya', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Jay') ) | ~( KNOWS('Dhanya', 'Alex') ) | KNOWS('Dhanya', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Elena') ) | ~( KNOWS('Dhanya', 'Alex') ) | KNOWS('Dhanya', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Sabina') ) | ~( KNOWS('Dhanya', 'Alex') ) | KNOWS('Dhanya', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Steve') ) | ~( KNOWS('Dhanya', 'Alex') ) | KNOWS('Dhanya', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Alex') ) | ~( KNOWS('Dhanya', 'Arti') ) | KNOWS('Dhanya', 'Alex') )	0.9987665199441835
+5.0	true	( ~( KNOWS('Arti', 'Ben') ) | ~( KNOWS('Dhanya', 'Arti') ) | KNOWS('Dhanya', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Elena') ) | ~( KNOWS('Dhanya', 'Arti') ) | KNOWS('Dhanya', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Steve') ) | ~( KNOWS('Dhanya', 'Arti') ) | KNOWS('Dhanya', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Jay') ) | ~( KNOWS('Dhanya', 'Arti') ) | KNOWS('Dhanya', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Sabina') ) | ~( KNOWS('Dhanya', 'Arti') ) | KNOWS('Dhanya', 'Sabina') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Arti') ) | ~( KNOWS('Dhanya', 'Sabina') ) | KNOWS('Dhanya', 'Arti') )	0.9632414728403091
+5.0	true	( ~( KNOWS('Sabina', 'Elena') ) | ~( KNOWS('Dhanya', 'Sabina') ) | KNOWS('Dhanya', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Alex') ) | ~( KNOWS('Dhanya', 'Sabina') ) | KNOWS('Dhanya', 'Alex') )	0.9926272956654429
+5.0	true	( ~( KNOWS('Sabina', 'Ben') ) | ~( KNOWS('Dhanya', 'Sabina') ) | KNOWS('Dhanya', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Alex') ) | ~( KNOWS('Sabina', 'Elena') ) | KNOWS('Sabina', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Sabina', 'Steve') ) | ~( KNOWS('Dhanya', 'Sabina') ) | KNOWS('Dhanya', 'Steve') )	0.9998505879484583
+5.0	true	( ~( KNOWS('Sabina', 'Jay') ) | ~( KNOWS('Dhanya', 'Sabina') ) | KNOWS('Dhanya', 'Jay') )	0.9939182577654719
+5.0	true	( ~( KNOWS('Elena', 'Arti') ) | ~( KNOWS('Sabina', 'Elena') ) | KNOWS('Sabina', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Ben') ) | ~( KNOWS('Sabina', 'Elena') ) | KNOWS('Sabina', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Ben') ) | ~( KNOWS('Sabina', 'Steve') ) | KNOWS('Sabina', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Alex') ) | ~( KNOWS('Sabina', 'Steve') ) | KNOWS('Sabina', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Arti') ) | ~( KNOWS('Sabina', 'Steve') ) | KNOWS('Sabina', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Elena', 'Jay') ) | ~( KNOWS('Sabina', 'Elena') ) | KNOWS('Sabina', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Alex') ) | ~( KNOWS('Sabina', 'Jay') ) | KNOWS('Sabina', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Arti') ) | ~( KNOWS('Sabina', 'Jay') ) | KNOWS('Sabina', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Ben') ) | ~( KNOWS('Sabina', 'Jay') ) | KNOWS('Sabina', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Elena') ) | ~( KNOWS('Sabina', 'Jay') ) | KNOWS('Sabina', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Jay') ) | ~( KNOWS('Sabina', 'Steve') ) | KNOWS('Sabina', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Arti') ) | ~( KNOWS('Sabina', 'Ben') ) | KNOWS('Sabina', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Jay', 'Steve') ) | ~( KNOWS('Sabina', 'Jay') ) | KNOWS('Sabina', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Alex') ) | ~( KNOWS('Sabina', 'Ben') ) | KNOWS('Sabina', 'Alex') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Steve') ) | ~( KNOWS('Sabina', 'Ben') ) | KNOWS('Sabina', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Jay') ) | ~( KNOWS('Sabina', 'Ben') ) | KNOWS('Sabina', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Arti') ) | ~( KNOWS('Sabina', 'Alex') ) | KNOWS('Sabina', 'Arti') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Ben') ) | ~( KNOWS('Sabina', 'Alex') ) | KNOWS('Sabina', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Elena') ) | ~( KNOWS('Sabina', 'Alex') ) | KNOWS('Sabina', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Ben', 'Elena') ) | ~( KNOWS('Sabina', 'Ben') ) | KNOWS('Sabina', 'Elena') )	0.983022402971983
+5.0	true	( ~( KNOWS('Elena', 'Steve') ) | ~( KNOWS('Sabina', 'Elena') ) | KNOWS('Sabina', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Alex', 'Jay') ) | ~( KNOWS('Sabina', 'Alex') ) | KNOWS('Sabina', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Alex') ) | ~( KNOWS('Sabina', 'Arti') ) | KNOWS('Sabina', 'Alex') )	0.9801241848617792
+5.0	true	( ~( KNOWS('Alex', 'Steve') ) | ~( KNOWS('Sabina', 'Alex') ) | KNOWS('Sabina', 'Steve') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Ben') ) | ~( KNOWS('Sabina', 'Arti') ) | KNOWS('Sabina', 'Ben') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Elena') ) | ~( KNOWS('Sabina', 'Arti') ) | KNOWS('Sabina', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Jay') ) | ~( KNOWS('Sabina', 'Arti') ) | KNOWS('Sabina', 'Jay') )	1.0
+5.0	true	( ~( KNOWS('Steve', 'Elena') ) | ~( KNOWS('Sabina', 'Steve') ) | KNOWS('Sabina', 'Elena') )	1.0
+5.0	true	( ~( KNOWS('Arti', 'Steve') ) | ~( KNOWS('Sabina', 'Arti') ) | KNOWS('Sabina', 'Steve') )	1.0
+20.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( LIVED('Jay', 'Maryland') ) | KNOWS('Elena', 'Jay') )	0.6735199689865112
+20.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( LIVED('Ben', 'Maryland') ) | KNOWS('Elena', 'Ben') )	0.999920480135188
+20.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( LIVED('Steve', 'Maryland') ) | KNOWS('Elena', 'Steve') )	0.7461261749267578
+20.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( LIVED('Alex', 'Maryland') ) | KNOWS('Elena', 'Alex') )	0.9166966080665588
+20.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( LIVED('Arti', 'Maryland') ) | KNOWS('Elena', 'Arti') )	0.7644714117050171
+20.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( LIVED('Steve', 'New Jersey') ) | KNOWS('Jay', 'Steve') )	0.8511687517166138
+20.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( LIVED('Ben', 'Pennsylvania') ) | KNOWS('Jay', 'Ben') )	0.6754817068576813
+20.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( LIVED('Elena', 'Maryland') ) | KNOWS('Jay', 'Elena') )	0.6735555231571198
+20.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( LIVED('Steve', 'Maryland') ) | KNOWS('Jay', 'Steve') )	0.8511687517166138
+20.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( LIVED('Ben', 'Maryland') ) | KNOWS('Jay', 'Ben') )	0.6754817068576813
+20.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( LIVED('Arti', 'Maryland') ) | KNOWS('Jay', 'Arti') )	0.7767742574214935
+20.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( LIVED('Alex', 'Maryland') ) | KNOWS('Jay', 'Alex') )	0.8815638497471809
+20.0	true	( ~( LIVED('Jay', 'California') ) | ~( LIVED('Dhanya', 'California') ) | KNOWS('Jay', 'Dhanya') )	0.7012811005115509
+20.0	true	( ~( LIVED('Jay', 'California') ) | ~( LIVED('Arti', 'California') ) | KNOWS('Jay', 'Arti') )	0.7767742574214935
+20.0	true	( ~( LIVED('Jay', 'California') ) | ~( LIVED('Steve', 'California') ) | KNOWS('Jay', 'Steve') )	0.8511687517166138
+20.0	true	( ~( LIVED('Jay', 'California') ) | ~( LIVED('Sabina', 'California') ) | KNOWS('Jay', 'Sabina') )	0.7849065810441971
+20.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( LIVED('Jay', 'New Jersey') ) | KNOWS('Steve', 'Jay') )	0.8512797951698303
+20.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( LIVED('Elena', 'Maryland') ) | KNOWS('Steve', 'Elena') )	0.7454868257045746
+20.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( LIVED('Jay', 'Maryland') ) | KNOWS('Steve', 'Jay') )	0.8512797951698303
+20.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( LIVED('Ben', 'Maryland') ) | KNOWS('Steve', 'Ben') )	0.6880691647529602
+20.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( LIVED('Alex', 'Maryland') ) | KNOWS('Steve', 'Alex') )	0.8819716572761536
+20.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( LIVED('Arti', 'Maryland') ) | KNOWS('Steve', 'Arti') )	0.8105236738920212
+20.0	true	( ~( LIVED('Steve', 'California') ) | ~( LIVED('Jay', 'California') ) | KNOWS('Steve', 'Jay') )	0.8512797951698303
+20.0	true	( ~( LIVED('Steve', 'California') ) | ~( LIVED('Arti', 'California') ) | KNOWS('Steve', 'Arti') )	0.8105236738920212
+20.0	true	( ~( LIVED('Steve', 'California') ) | ~( LIVED('Dhanya', 'California') ) | KNOWS('Steve', 'Dhanya') )	0.74649778008461
+20.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( LIVED('Jay', 'Pennsylvania') ) | KNOWS('Ben', 'Jay') )	0.6753415763378143
+20.0	true	( ~( LIVED('Steve', 'California') ) | ~( LIVED('Sabina', 'California') ) | KNOWS('Steve', 'Sabina') )	0.7632053196430206
+20.0	true	( ~( LIVED('Ben', 'New York') ) | ~( LIVED('Arti', 'New York') ) | KNOWS('Ben', 'Arti') )	0.7336429059505463
+20.0	true	( ~( LIVED('Ben', 'New York') ) | ~( LIVED('Sabina', 'New York') ) | KNOWS('Ben', 'Sabina') )	0.7053667306900024
+20.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( LIVED('Jay', 'Maryland') ) | KNOWS('Ben', 'Jay') )	0.6753415763378143
+20.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( LIVED('Steve', 'Maryland') ) | KNOWS('Ben', 'Steve') )	0.6868163645267487
+20.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( LIVED('Alex', 'Maryland') ) | KNOWS('Ben', 'Alex') )	0.8319950699806213
+20.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( LIVED('Arti', 'Maryland') ) | KNOWS('Ben', 'Arti') )	0.7336429059505463
+20.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( LIVED('Elena', 'Maryland') ) | KNOWS('Alex', 'Elena') )	0.9164569303393364
+20.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( LIVED('Jay', 'Maryland') ) | KNOWS('Alex', 'Jay') )	0.8818786293268204
+20.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( LIVED('Steve', 'Maryland') ) | KNOWS('Alex', 'Steve') )	0.8822212293744087
+20.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( LIVED('Ben', 'Maryland') ) | KNOWS('Alex', 'Ben') )	0.8338052481412888
+20.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( LIVED('Arti', 'Maryland') ) | KNOWS('Alex', 'Arti') )	0.9999883386672082
+20.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( LIVED('Elena', 'Maryland') ) | KNOWS('Arti', 'Elena') )	0.763435497879982
+20.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( LIVED('Jay', 'Maryland') ) | KNOWS('Arti', 'Jay') )	0.7762589454650879
+20.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( LIVED('Steve', 'Maryland') ) | KNOWS('Arti', 'Steve') )	0.8101822882890701
+20.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( LIVED('Ben', 'Maryland') ) | KNOWS('Arti', 'Ben') )	0.7339212894439697
+20.0	true	( ~( LIVED('Arti', 'California') ) | ~( LIVED('Jay', 'California') ) | KNOWS('Arti', 'Jay') )	0.7762589454650879
+20.0	true	( ~( LIVED('Arti', 'California') ) | ~( LIVED('Steve', 'California') ) | KNOWS('Arti', 'Steve') )	0.8101822882890701
+20.0	true	( ~( LIVED('Arti', 'California') ) | ~( LIVED('Dhanya', 'California') ) | KNOWS('Arti', 'Dhanya') )	0.7721723765134811
+20.0	true	( ~( LIVED('Arti', 'California') ) | ~( LIVED('Sabina', 'California') ) | KNOWS('Arti', 'Sabina') )	0.9212697222828865
+20.0	true	( ~( LIVED('Arti', 'New York') ) | ~( LIVED('Ben', 'New York') ) | KNOWS('Arti', 'Ben') )	0.7339212894439697
+20.0	true	( ~( LIVED('Arti', 'New York') ) | ~( LIVED('Sabina', 'New York') ) | KNOWS('Arti', 'Sabina') )	0.9212697222828865
+20.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( LIVED('Jay', 'California') ) | KNOWS('Dhanya', 'Jay') )	0.7022062838077545
+20.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( LIVED('Steve', 'California') ) | KNOWS('Dhanya', 'Steve') )	0.7474188804626465
+20.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( LIVED('Arti', 'California') ) | KNOWS('Dhanya', 'Arti') )	0.7734305709600449
+20.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( LIVED('Sabina', 'California') ) | KNOWS('Dhanya', 'Sabina') )	0.9999878741264183
+20.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( LIVED('Ben', 'Washington') ) | KNOWS('Dhanya', 'Ben') )	0.9999035140499473
+20.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( LIVED('Ben', 'New York') ) | KNOWS('Sabina', 'Ben') )	0.7070260643959045
+20.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( LIVED('Arti', 'New York') ) | KNOWS('Sabina', 'Arti') )	0.9211593717336655
+20.0	true	( ~( LIVED('Sabina', 'California') ) | ~( LIVED('Jay', 'California') ) | KNOWS('Sabina', 'Jay') )	0.7844839692115784
+20.0	true	( ~( LIVED('Sabina', 'California') ) | ~( LIVED('Steve', 'California') ) | KNOWS('Sabina', 'Steve') )	0.7629587203264236
+20.0	true	( ~( LIVED('Sabina', 'California') ) | ~( LIVED('Arti', 'California') ) | KNOWS('Sabina', 'Arti') )	0.9211593717336655
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.01775527000427246
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.8639729917049408
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7350971698760986
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.8639729917049408
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.8162886202335358
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.01775527000427246
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7350971698760986
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.01775527000427246
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.8162886202335358
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.8162886202335358
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.8913078159093857
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.7538440376520157
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.7538440376520157
+5.0	true	( ~( LIVED('Elena', 'Maryland') ) | ~( KNOWS('Elena', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.8913078159093857
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7350971698760986
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7350971698760986
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.49394315481185913
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.01775527000427246
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7350971698760986
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.01775527000427246
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.01775527000427246
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.01775527000427246
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.8639729917049408
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.8162886202335358
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.8639729917049408
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.8162886202335358
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.8162886202335358
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.8162886202335358
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.8913078159093857
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.7538440376520157
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.7538440376520157
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.8913078159093857
+5.0	true	( ~( LIVED('Elena', 'Illinois') ) | ~( KNOWS('Elena', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.7538440376520157
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.5698549151420593
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.794384777545929
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.8162619471549988
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.794384777545929
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7124698758125305
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.5698549151420593
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.794384777545929
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7124698758125305
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'New Jersey') ) | ~( KNOWS('Jay', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.8162619471549988
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7124698758125305
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.8162619471549988
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.8162619471549988
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.794384777545929
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'Pennsylvania') ) | ~( KNOWS('Jay', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7124698758125305
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.794384777545929
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.794384777545929
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7124698758125305
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.8162619471549988
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7124698758125305
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'Maryland') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.5698549151420593
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7217096984386444
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.8148118257522583
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.8162619471549988
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.8162619471549988
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7124698758125305
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.794384777545929
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.6811012327671051
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.6811012327671051
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.6811012327671051
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.5690767168998718
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Jay', 'California') ) | ~( KNOWS('Jay', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.6227418184280396
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.7534778565168381
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.7544728368520737
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.7534778565168381
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.7544728368520737
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7364363968372345
+5.0	true	( ~( LIVED('Steve', 'New Jersey') ) | ~( KNOWS('Steve', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7364363968372345
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.6811012327671051
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.6811012327671051
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.7534778565168381
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.7534778565168381
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.7544728368520737
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7364363968372345
+5.0	true	( ~( LIVED('Steve', 'Maryland') ) | ~( KNOWS('Steve', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7364363968372345
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.5690767168998718
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.6811012327671051
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.6811012327671051
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.8050845265388489
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.7544728368520737
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.7544728368520737
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.7534778565168381
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.622564971446991
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Steve', 'California') ) | ~( KNOWS('Steve', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7364363968372345
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.6517631411552429
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7909693717956543
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7909693717956543
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.6517631411552429
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'Pennsylvania') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7909693717956543
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'New York') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7909693717956543
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7909693717956543
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.6517631411552429
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7658388167619705
+5.0	true	( ~( LIVED('Ben', 'Maryland') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.7909693717956543
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.7909693717956543
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.8149176687002182
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Ben', 'Washington') ) | ~( KNOWS('Ben', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.8060725927352905
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.006818056106567383
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.6491450667381287
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.006818056106567383
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.6491450667381287
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.7620018124580383
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.4945333003997803
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.7620018124580383
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.6491450667381287
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.5692544281482697
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.5692544281482697
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.5692544281482697
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.6647206246852875
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.5685994625091553
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.6647206246852875
+5.0	true	( ~( LIVED('Alex', 'Maryland') ) | ~( KNOWS('Alex', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.5685994625091553
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.73619344830513
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.7267982065677643
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.7267982065677643
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.4824480414390564
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.4824480414390564
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.68154376745224
+5.0	true	( ~( LIVED('Arti', 'Maryland') ) | ~( KNOWS('Arti', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.68154376745224
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.7267982065677643
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.73619344830513
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.73619344830513
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.4824480414390564
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.68154376745224
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'California') ) | ~( KNOWS('Arti', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.68154376745224
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Dhanya') ) | ~( LIVED('Dhanya', 'California') ) )	0.7267982065677643
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.73619344830513
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Dhanya') ) | ~( LIVED('Dhanya', 'Washington') ) )	0.7267982065677643
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.73619344830513
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.7222844362258911
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.4824480414390564
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.68154376745224
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.7609905153512955
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.68154376745224
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.68154376745224
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7254167795181274
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7254167795181274
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.01954895257949829
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.01954895257949829
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.01954895257949829
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.01954895257949829
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.86366406083107
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.86366406083107
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.793615847826004
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.793615847826004
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.793615847826004
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.006952345371246338
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.7525678724050522
+5.0	true	( ~( LIVED('Dhanya', 'California') ) | ~( KNOWS('Dhanya', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.7525678724050522
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.7609905153512955
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.7254167795181274
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.7254167795181274
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.7254167795181274
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.01954895257949829
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.01954895257949829
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.01954895257949829
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.86366406083107
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.86366406083107
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.793615847826004
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.793615847826004
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.793615847826004
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.793615847826004
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Sabina') ) | ~( LIVED('Sabina', 'California') ) )	0.006952345371246338
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Sabina') ) | ~( LIVED('Sabina', 'New York') ) )	0.006952345371246338
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.7525678724050522
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.7525678724050522
+5.0	true	( ~( LIVED('Dhanya', 'Washington') ) | ~( KNOWS('Dhanya', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.7525678724050522
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.6656470000743866
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.4827308654785156
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Arti') ) | ~( LIVED('Arti', 'California') ) )	0.4827308654785156
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.7895674109458923
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.7895674109458923
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.7895674109458923
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.8921329379081726
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.8921329379081726
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Jay') ) | ~( LIVED('Jay', 'California') ) )	0.712958037853241
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.712958037853241
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.712958037853241
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.712958037853241
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Steve') ) | ~( LIVED('Steve', 'California') ) )	0.7366964221000671
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.7366964221000671
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Alex') ) | ~( LIVED('Alex', 'Maryland') ) )	0.6656470000743866
+5.0	true	( ~( LIVED('Sabina', 'New York') ) | ~( KNOWS('Sabina', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.7366964221000671
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Arti') ) | ~( LIVED('Arti', 'Maryland') ) )	0.4827308654785156
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Ben') ) | ~( LIVED('Ben', 'Maryland') ) )	0.7895674109458923
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.7895674109458923
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Ben') ) | ~( LIVED('Ben', 'New York') ) )	0.7895674109458923
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Arti') ) | ~( LIVED('Arti', 'New York') ) )	0.4827308654785156
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Elena') ) | ~( LIVED('Elena', 'Illinois') ) )	0.8921329379081726
+5.0	true	( ~( LIVED('Arti', 'New York') ) | ~( KNOWS('Arti', 'Ben') ) | ~( LIVED('Ben', 'Pennsylvania') ) )	0.7655776590108871
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Ben') ) | ~( LIVED('Ben', 'Washington') ) )	0.7895674109458923
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Elena') ) | ~( LIVED('Elena', 'Maryland') ) )	0.8921329379081726
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Jay') ) | ~( LIVED('Jay', 'Maryland') ) )	0.712958037853241
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Jay') ) | ~( LIVED('Jay', 'New Jersey') ) )	0.712958037853241
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Jay') ) | ~( LIVED('Jay', 'Pennsylvania') ) )	0.712958037853241
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Steve') ) | ~( LIVED('Steve', 'Maryland') ) )	0.7366964221000671
+5.0	true	( ~( LIVED('Sabina', 'California') ) | ~( KNOWS('Sabina', 'Steve') ) | ~( LIVED('Steve', 'New Jersey') ) )	0.7366964221000671
+10.0	true	( ~( LIKES('Elena', 'Machine Learning') ) | ~( LIKES('Jay', 'Machine Learning') ) | KNOWS('Jay', 'Elena') )	0.6735555231571198
+10.0	true	( ~( LIKES('Elena', 'Machine Learning') ) | ~( LIKES('Steve', 'Machine Learning') ) | KNOWS('Steve', 'Elena') )	0.7454868257045746
+10.0	true	( ~( LIKES('Elena', 'Machine Learning') ) | ~( LIKES('Alex', 'Machine Learning') ) | KNOWS('Alex', 'Elena') )	0.9164569303393364
+10.0	true	( ~( LIKES('Elena', 'Machine Learning') ) | ~( LIKES('Arti', 'Machine Learning') ) | KNOWS('Arti', 'Elena') )	0.763435497879982
+10.0	true	( ~( LIKES('Jay', 'Machine Learning') ) | ~( LIKES('Elena', 'Machine Learning') ) | KNOWS('Elena', 'Jay') )	0.6735199689865112
+10.0	true	( ~( LIKES('Elena', 'Machine Learning') ) | ~( LIKES('Sabina', 'Machine Learning') ) | KNOWS('Sabina', 'Elena') )	0.5489954054355621
+10.0	true	( ~( LIKES('Elena', 'Machine Learning') ) | ~( LIKES('Dhanya', 'Machine Learning') ) | KNOWS('Dhanya', 'Elena') )	0.6021379828453064
+10.0	true	( ~( LIKES('Jay', 'Machine Learning') ) | ~( LIKES('Steve', 'Machine Learning') ) | KNOWS('Steve', 'Jay') )	0.8512797951698303
+10.0	true	( ~( LIKES('Jay', 'Machine Learning') ) | ~( LIKES('Ben', 'Machine Learning') ) | KNOWS('Ben', 'Jay') )	0.6753415763378143
+10.0	true	( ~( LIKES('Jay', 'Machine Learning') ) | ~( LIKES('Alex', 'Machine Learning') ) | KNOWS('Alex', 'Jay') )	0.8818786293268204
+10.0	true	( ~( LIKES('Jay', 'Machine Learning') ) | ~( LIKES('Dhanya', 'Machine Learning') ) | KNOWS('Dhanya', 'Jay') )	0.7022062838077545
+10.0	true	( ~( LIKES('Jay', 'Machine Learning') ) | ~( LIKES('Arti', 'Machine Learning') ) | KNOWS('Arti', 'Jay') )	0.7762589454650879
+10.0	true	( ~( LIKES('Steve', 'Machine Learning') ) | ~( LIKES('Elena', 'Machine Learning') ) | KNOWS('Elena', 'Steve') )	0.7461261749267578
+10.0	true	( ~( LIKES('Jay', 'Machine Learning') ) | ~( LIKES('Sabina', 'Machine Learning') ) | KNOWS('Sabina', 'Jay') )	0.7844839692115784
+10.0	true	( ~( LIKES('Steve', 'Machine Learning') ) | ~( LIKES('Ben', 'Machine Learning') ) | KNOWS('Ben', 'Steve') )	0.6868163645267487
+10.0	true	( ~( LIKES('Steve', 'Machine Learning') ) | ~( LIKES('Dhanya', 'Machine Learning') ) | KNOWS('Dhanya', 'Steve') )	0.7474188804626465
+10.0	true	( ~( LIKES('Steve', 'Machine Learning') ) | ~( LIKES('Jay', 'Machine Learning') ) | KNOWS('Jay', 'Steve') )	0.8511687517166138
+10.0	true	( ~( LIKES('Steve', 'Machine Learning') ) | ~( LIKES('Alex', 'Machine Learning') ) | KNOWS('Alex', 'Steve') )	0.8822212293744087
+10.0	true	( ~( LIKES('Steve', 'Machine Learning') ) | ~( LIKES('Arti', 'Machine Learning') ) | KNOWS('Arti', 'Steve') )	0.8101822882890701
+10.0	true	( ~( LIKES('Steve', 'Machine Learning') ) | ~( LIKES('Sabina', 'Machine Learning') ) | KNOWS('Sabina', 'Steve') )	0.7629587203264236
+10.0	true	( ~( LIKES('Ben', 'Machine Learning') ) | ~( LIKES('Steve', 'Machine Learning') ) | KNOWS('Steve', 'Ben') )	0.6880691647529602
+10.0	true	( ~( LIKES('Ben', 'Machine Learning') ) | ~( LIKES('Jay', 'Machine Learning') ) | KNOWS('Jay', 'Ben') )	0.6754817068576813
+10.0	true	( ~( LIKES('Ben', 'Machine Learning') ) | ~( LIKES('Arti', 'Machine Learning') ) | KNOWS('Arti', 'Ben') )	0.7339212894439697
+10.0	true	( ~( LIKES('Ben', 'Machine Learning') ) | ~( LIKES('Sabina', 'Machine Learning') ) | KNOWS('Sabina', 'Ben') )	0.7070260643959045
+10.0	true	( ~( LIKES('Ben', 'Machine Learning') ) | ~( LIKES('Alex', 'Machine Learning') ) | KNOWS('Alex', 'Ben') )	0.8338052481412888
+10.0	true	( ~( LIKES('Alex', 'Machine Learning') ) | ~( LIKES('Jay', 'Machine Learning') ) | KNOWS('Jay', 'Alex') )	0.8815638497471809
+10.0	true	( ~( LIKES('Alex', 'Machine Learning') ) | ~( LIKES('Elena', 'Machine Learning') ) | KNOWS('Elena', 'Alex') )	0.9166966080665588
+10.0	true	( ~( LIKES('Ben', 'Machine Learning') ) | ~( LIKES('Elena', 'Machine Learning') ) | KNOWS('Elena', 'Ben') )	0.999920480135188
+10.0	true	( ~( LIKES('Ben', 'Machine Learning') ) | ~( LIKES('Dhanya', 'Machine Learning') ) | KNOWS('Dhanya', 'Ben') )	0.9999035140499473
+10.0	true	( ~( LIKES('Alex', 'Machine Learning') ) | ~( LIKES('Ben', 'Machine Learning') ) | KNOWS('Ben', 'Alex') )	0.8319950699806213
+10.0	true	( ~( LIKES('Alex', 'Machine Learning') ) | ~( LIKES('Dhanya', 'Machine Learning') ) | KNOWS('Dhanya', 'Alex') )	0.7387624680995941
+10.0	true	( ~( LIKES('Alex', 'Machine Learning') ) | ~( LIKES('Sabina', 'Machine Learning') ) | KNOWS('Sabina', 'Alex') )	0.8221122920513153
+10.0	true	( ~( LIKES('Arti', 'Machine Learning') ) | ~( LIKES('Elena', 'Machine Learning') ) | KNOWS('Elena', 'Arti') )	0.7644714117050171
+10.0	true	( ~( LIKES('Arti', 'Machine Learning') ) | ~( LIKES('Jay', 'Machine Learning') ) | KNOWS('Jay', 'Arti') )	0.7767742574214935
+10.0	true	( ~( LIKES('Alex', 'Machine Learning') ) | ~( LIKES('Steve', 'Machine Learning') ) | KNOWS('Steve', 'Alex') )	0.8819716572761536
+10.0	true	( ~( LIKES('Arti', 'Machine Learning') ) | ~( LIKES('Alex', 'Machine Learning') ) | KNOWS('Alex', 'Arti') )	0.9999883386672082
+10.0	true	( ~( LIKES('Arti', 'Machine Learning') ) | ~( LIKES('Dhanya', 'Machine Learning') ) | KNOWS('Dhanya', 'Arti') )	0.7734305709600449
+10.0	true	( ~( LIKES('Arti', 'Machine Learning') ) | ~( LIKES('Sabina', 'Machine Learning') ) | KNOWS('Sabina', 'Arti') )	0.9211593717336655
+10.0	true	( ~( LIKES('Dhanya', 'Machine Learning') ) | ~( LIKES('Elena', 'Machine Learning') ) | KNOWS('Elena', 'Dhanya') )	0.6016097962856293
+10.0	true	( ~( LIKES('Arti', 'Machine Learning') ) | ~( LIKES('Ben', 'Machine Learning') ) | KNOWS('Ben', 'Arti') )	0.7336429059505463
+10.0	true	( ~( LIKES('Dhanya', 'Machine Learning') ) | ~( LIKES('Steve', 'Machine Learning') ) | KNOWS('Steve', 'Dhanya') )	0.74649778008461
+10.0	true	( ~( LIKES('Arti', 'Machine Learning') ) | ~( LIKES('Steve', 'Machine Learning') ) | KNOWS('Steve', 'Arti') )	0.8105236738920212
+10.0	true	( ~( LIKES('Dhanya', 'Machine Learning') ) | ~( LIKES('Jay', 'Machine Learning') ) | KNOWS('Jay', 'Dhanya') )	0.7012811005115509
+10.0	true	( ~( LIKES('Dhanya', 'Machine Learning') ) | ~( LIKES('Alex', 'Machine Learning') ) | KNOWS('Alex', 'Dhanya') )	0.7377029359340668
+10.0	true	( ~( LIKES('Dhanya', 'Machine Learning') ) | ~( LIKES('Arti', 'Machine Learning') ) | KNOWS('Arti', 'Dhanya') )	0.7721723765134811
+10.0	true	( ~( LIKES('Sabina', 'Machine Learning') ) | ~( LIKES('Elena', 'Machine Learning') ) | KNOWS('Elena', 'Sabina') )	0.5506777763366699
+10.0	true	( ~( LIKES('Sabina', 'Machine Learning') ) | ~( LIKES('Jay', 'Machine Learning') ) | KNOWS('Jay', 'Sabina') )	0.7849065810441971
+10.0	true	( ~( LIKES('Sabina', 'Machine Learning') ) | ~( LIKES('Steve', 'Machine Learning') ) | KNOWS('Steve', 'Sabina') )	0.7632053196430206
+10.0	true	( ~( LIKES('Sabina', 'Machine Learning') ) | ~( LIKES('Ben', 'Machine Learning') ) | KNOWS('Ben', 'Sabina') )	0.7053667306900024
+10.0	true	( ~( LIKES('Sabina', 'Machine Learning') ) | ~( LIKES('Alex', 'Machine Learning') ) | KNOWS('Alex', 'Sabina') )	0.8227868974208832
+10.0	true	( ~( LIKES('Sabina', 'Machine Learning') ) | ~( LIKES('Dhanya', 'Machine Learning') ) | KNOWS('Dhanya', 'Sabina') )	0.9999878741264183
+10.0	true	( ~( LIKES('Sabina', 'Machine Learning') ) | ~( LIKES('Arti', 'Machine Learning') ) | KNOWS('Arti', 'Sabina') )	0.9212697222828865
+10.0	true	( ~( LIKES('Jay', 'Skeeball') ) | ~( LIKES('Steve', 'Skeeball') ) | KNOWS('Steve', 'Jay') )	0.9655368477106094
+10.0	true	( ~( LIKES('Steve', 'Skeeball') ) | ~( LIKES('Jay', 'Skeeball') ) | KNOWS('Jay', 'Steve') )	0.9654833823442459
+10.0	true	( ~( LIKES('Jay', 'Skeeball') ) | ~( LIKES('Ben', 'Skeeball') ) | KNOWS('Ben', 'Jay') )	0.8632568418979645
+10.0	true	( ~( LIKES('Steve', 'Skeeball') ) | ~( LIKES('Ben', 'Skeeball') ) | KNOWS('Ben', 'Steve') )	0.6868163645267487
+10.0	true	( ~( LIKES('Ben', 'Skeeball') ) | ~( LIKES('Steve', 'Skeeball') ) | KNOWS('Steve', 'Ben') )	0.6880691647529602
+10.0	true	( ~( LIKES('Ben', 'Skeeball') ) | ~( LIKES('Jay', 'Skeeball') ) | KNOWS('Jay', 'Ben') )	0.8633477836847305
+10.0	true	( ~( LIKES('Jay', 'Trivia') ) | ~( LIKES('Steve', 'Trivia') ) | KNOWS('Steve', 'Jay') )	0.9655368477106094
+10.0	true	( ~( LIKES('Steve', 'Trivia') ) | ~( LIKES('Jay', 'Trivia') ) | KNOWS('Jay', 'Steve') )	0.9654833823442459
+10.0	true	( ~( LIKES('Jay', 'Trivia') ) | ~( LIKES('Sabina', 'Trivia') ) | KNOWS('Sabina', 'Jay') )	0.9958736002445221
+10.0	true	( ~( LIKES('Steve', 'Trivia') ) | ~( LIKES('Sabina', 'Trivia') ) | KNOWS('Sabina', 'Steve') )	1.0
+10.0	true	( ~( LIKES('Sabina', 'Trivia') ) | ~( LIKES('Steve', 'Trivia') ) | KNOWS('Steve', 'Sabina') )	1.0
+10.0	true	( ~( LIKES('Steve', 'Sports') ) | ~( LIKES('Ben', 'Sports') ) | KNOWS('Ben', 'Steve') )	0.8706676661968231
+10.0	true	( ~( LIKES('Sabina', 'Trivia') ) | ~( LIKES('Jay', 'Trivia') ) | KNOWS('Jay', 'Sabina') )	0.9959318973124027
+10.0	true	( ~( LIKES('Ben', 'Sports') ) | ~( LIKES('Steve', 'Sports') ) | KNOWS('Steve', 'Ben') )	0.8714722841978073
+10.0	true	( ~( LIKES('Alex', 'Veggies') ) | ~( LIKES('Sabina', 'Veggies') ) | KNOWS('Sabina', 'Alex') )	0.8221122920513153
+10.0	true	( ~( LIKES('Alex', 'Veggies') ) | ~( LIKES('Jay', 'Veggies') ) | KNOWS('Jay', 'Alex') )	0.8815638497471809
+10.0	true	( ~( LIKES('Alex', 'Veggies') ) | ~( LIKES('Dhanya', 'Veggies') ) | KNOWS('Dhanya', 'Alex') )	0.9876536671072245
+10.0	true	( ~( LIKES('Alex', 'Veggies') ) | ~( LIKES('Steve', 'Veggies') ) | KNOWS('Steve', 'Alex') )	1.0
+10.0	true	( ~( LIKES('Jay', 'Veggies') ) | ~( LIKES('Alex', 'Veggies') ) | KNOWS('Alex', 'Jay') )	0.8818786293268204
+10.0	true	( ~( LIKES('Alex', 'Veggies') ) | ~( LIKES('Ben', 'Veggies') ) | KNOWS('Ben', 'Alex') )	1.0
+10.0	true	( ~( LIKES('Alex', 'Veggies') ) | ~( LIKES('Elena', 'Veggies') ) | KNOWS('Elena', 'Alex') )	1.0
+10.0	true	( ~( LIKES('Jay', 'Veggies') ) | ~( LIKES('Arti', 'Veggies') ) | KNOWS('Arti', 'Jay') )	0.7762589454650879
+10.0	true	( ~( LIKES('Jay', 'Veggies') ) | ~( LIKES('Dhanya', 'Veggies') ) | KNOWS('Dhanya', 'Jay') )	0.9787701088935137
+10.0	true	( ~( LIKES('Jay', 'Veggies') ) | ~( LIKES('Sabina', 'Veggies') ) | KNOWS('Sabina', 'Jay') )	0.7844839692115784
+10.0	true	( ~( LIKES('Jay', 'Veggies') ) | ~( LIKES('Steve', 'Veggies') ) | KNOWS('Steve', 'Jay') )	1.0
+10.0	true	( ~( LIKES('Jay', 'Veggies') ) | ~( LIKES('Ben', 'Veggies') ) | KNOWS('Ben', 'Jay') )	1.0
+10.0	true	( ~( LIKES('Jay', 'Veggies') ) | ~( LIKES('Elena', 'Veggies') ) | KNOWS('Elena', 'Jay') )	1.0
+10.0	true	( ~( LIKES('Sabina', 'Veggies') ) | ~( LIKES('Alex', 'Veggies') ) | KNOWS('Alex', 'Sabina') )	0.8227868974208832
+10.0	true	( ~( LIKES('Sabina', 'Veggies') ) | ~( LIKES('Jay', 'Veggies') ) | KNOWS('Jay', 'Sabina') )	0.7849065810441971
+10.0	true	( ~( LIKES('Sabina', 'Veggies') ) | ~( LIKES('Arti', 'Veggies') ) | KNOWS('Arti', 'Sabina') )	0.9212697222828865
+10.0	true	( ~( LIKES('Sabina', 'Veggies') ) | ~( LIKES('Dhanya', 'Veggies') ) | KNOWS('Dhanya', 'Sabina') )	1.0
+10.0	true	( ~( LIKES('Sabina', 'Veggies') ) | ~( LIKES('Steve', 'Veggies') ) | KNOWS('Steve', 'Sabina') )	0.9924977445043623
+10.0	true	( ~( LIKES('Sabina', 'Veggies') ) | ~( LIKES('Elena', 'Veggies') ) | KNOWS('Elena', 'Sabina') )	0.9950558003038168
+10.0	true	( ~( LIKES('Sabina', 'Veggies') ) | ~( LIKES('Ben', 'Veggies') ) | KNOWS('Ben', 'Sabina') )	1.0
+10.0	true	( ~( LIKES('Arti', 'Veggies') ) | ~( LIKES('Alex', 'Veggies') ) | KNOWS('Alex', 'Arti') )	0.9999883386672082
+10.0	true	( ~( LIKES('Arti', 'Veggies') ) | ~( LIKES('Jay', 'Veggies') ) | KNOWS('Jay', 'Arti') )	0.7767742574214935
+10.0	true	( ~( LIKES('Arti', 'Veggies') ) | ~( LIKES('Dhanya', 'Veggies') ) | KNOWS('Dhanya', 'Arti') )	0.9942250456660986
+10.0	true	( ~( LIKES('Arti', 'Veggies') ) | ~( LIKES('Sabina', 'Veggies') ) | KNOWS('Sabina', 'Arti') )	0.9211593717336655
+10.0	true	( ~( LIKES('Arti', 'Veggies') ) | ~( LIKES('Steve', 'Veggies') ) | KNOWS('Steve', 'Arti') )	0.9987546998308972
+10.0	true	( ~( LIKES('Dhanya', 'Veggies') ) | ~( LIKES('Alex', 'Veggies') ) | KNOWS('Alex', 'Dhanya') )	0.987422501668334
+10.0	true	( ~( LIKES('Arti', 'Veggies') ) | ~( LIKES('Elena', 'Veggies') ) | KNOWS('Elena', 'Arti') )	1.0
+10.0	true	( ~( LIKES('Arti', 'Veggies') ) | ~( LIKES('Ben', 'Veggies') ) | KNOWS('Ben', 'Arti') )	1.0
+10.0	true	( ~( LIKES('Dhanya', 'Veggies') ) | ~( LIKES('Jay', 'Veggies') ) | KNOWS('Jay', 'Dhanya') )	0.9785225465893745
+10.0	true	( ~( LIKES('Dhanya', 'Veggies') ) | ~( LIKES('Arti', 'Veggies') ) | KNOWS('Arti', 'Dhanya') )	0.9940227083861828
+10.0	true	( ~( LIKES('Dhanya', 'Veggies') ) | ~( LIKES('Steve', 'Veggies') ) | KNOWS('Steve', 'Dhanya') )	1.0
+10.0	true	( ~( LIKES('Dhanya', 'Veggies') ) | ~( LIKES('Elena', 'Veggies') ) | KNOWS('Elena', 'Dhanya') )	1.0
+10.0	true	( ~( LIKES('Steve', 'Veggies') ) | ~( LIKES('Alex', 'Veggies') ) | KNOWS('Alex', 'Steve') )	1.0
+10.0	true	( ~( LIKES('Steve', 'Veggies') ) | ~( LIKES('Jay', 'Veggies') ) | KNOWS('Jay', 'Steve') )	1.0
+10.0	true	( ~( LIKES('Steve', 'Veggies') ) | ~( LIKES('Arti', 'Veggies') ) | KNOWS('Arti', 'Steve') )	0.9987268826225773
+10.0	true	( ~( LIKES('Steve', 'Veggies') ) | ~( LIKES('Sabina', 'Veggies') ) | KNOWS('Sabina', 'Steve') )	0.9924537972547114
+10.0	true	( ~( LIKES('Steve', 'Veggies') ) | ~( LIKES('Dhanya', 'Veggies') ) | KNOWS('Dhanya', 'Steve') )	1.0
+10.0	true	( ~( LIKES('Steve', 'Veggies') ) | ~( LIKES('Elena', 'Veggies') ) | KNOWS('Elena', 'Steve') )	1.0
+10.0	true	( ~( LIKES('Elena', 'Veggies') ) | ~( LIKES('Alex', 'Veggies') ) | KNOWS('Alex', 'Elena') )	1.0
+10.0	true	( ~( LIKES('Steve', 'Veggies') ) | ~( LIKES('Ben', 'Veggies') ) | KNOWS('Ben', 'Steve') )	1.0
+10.0	true	( ~( LIKES('Elena', 'Veggies') ) | ~( LIKES('Sabina', 'Veggies') ) | KNOWS('Sabina', 'Elena') )	0.9948779130354524
+10.0	true	( ~( LIKES('Elena', 'Veggies') ) | ~( LIKES('Jay', 'Veggies') ) | KNOWS('Jay', 'Elena') )	1.0
+10.0	true	( ~( LIKES('Elena', 'Veggies') ) | ~( LIKES('Arti', 'Veggies') ) | KNOWS('Arti', 'Elena') )	1.0
+10.0	true	( ~( LIKES('Elena', 'Veggies') ) | ~( LIKES('Steve', 'Veggies') ) | KNOWS('Steve', 'Elena') )	1.0
+10.0	true	( ~( LIKES('Elena', 'Veggies') ) | ~( LIKES('Dhanya', 'Veggies') ) | KNOWS('Dhanya', 'Elena') )	1.0
+10.0	true	( ~( LIKES('Ben', 'Veggies') ) | ~( LIKES('Alex', 'Veggies') ) | KNOWS('Alex', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Ben', 'Veggies') ) | ~( LIKES('Jay', 'Veggies') ) | KNOWS('Jay', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Ben', 'Veggies') ) | ~( LIKES('Sabina', 'Veggies') ) | KNOWS('Sabina', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Ben', 'Veggies') ) | ~( LIKES('Dhanya', 'Veggies') ) | KNOWS('Dhanya', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Ben', 'Veggies') ) | ~( LIKES('Steve', 'Veggies') ) | KNOWS('Steve', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Ben', 'Veggies') ) | ~( LIKES('Arti', 'Veggies') ) | KNOWS('Arti', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Ben', 'Veggies') ) | ~( LIKES('Elena', 'Veggies') ) | KNOWS('Elena', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Jay', 'Climbing') ) | ~( LIKES('Sabina', 'Climbing') ) | KNOWS('Sabina', 'Jay') )	0.930178813636303
+10.0	true	( ~( LIKES('Jay', 'Climbing') ) | ~( LIKES('Dhanya', 'Climbing') ) | KNOWS('Dhanya', 'Jay') )	1.0
+10.0	true	( ~( LIKES('Sabina', 'Climbing') ) | ~( LIKES('Jay', 'Climbing') ) | KNOWS('Jay', 'Sabina') )	0.9304192662239075
+10.0	true	( ~( LIKES('Sabina', 'Climbing') ) | ~( LIKES('Dhanya', 'Climbing') ) | KNOWS('Dhanya', 'Sabina') )	1.0
+10.0	true	( ~( LIKES('Dhanya', 'Climbing') ) | ~( LIKES('Jay', 'Climbing') ) | KNOWS('Jay', 'Dhanya') )	1.0
+10.0	true	( ~( LIKES('Arti', 'Education') ) | ~( LIKES('Sabina', 'Education') ) | KNOWS('Sabina', 'Arti') )	0.9211593717336655
+10.0	true	( ~( LIKES('Ben', 'Hiking') ) | ~( LIKES('Dhanya', 'Hiking') ) | KNOWS('Dhanya', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Sabina', 'Education') ) | ~( LIKES('Arti', 'Education') ) | KNOWS('Arti', 'Sabina') )	0.9212697222828865
+10.0	true	( ~( LIKES('Ben', 'Hiking') ) | ~( LIKES('Steve', 'Hiking') ) | KNOWS('Steve', 'Ben') )	1.0
+10.0	true	( ~( LIKES('Dhanya', 'Hiking') ) | ~( LIKES('Steve', 'Hiking') ) | KNOWS('Steve', 'Dhanya') )	1.0
+10.0	true	( ~( LIKES('Steve', 'Hiking') ) | ~( LIKES('Ben', 'Hiking') ) | KNOWS('Ben', 'Steve') )	1.0
+10.0	true	( ~( LIKES('Steve', 'Hiking') ) | ~( LIKES('Dhanya', 'Hiking') ) | KNOWS('Dhanya', 'Steve') )	1.0
+5.0	true	~( KNOWS('Elena', 'Jay') )	0.8162886202335358
+5.0	true	~( KNOWS('Elena', 'Steve') )	0.7538440376520157
+5.0	true	~( KNOWS('Elena', 'Ben') )	0.01775527000427246
+5.0	true	~( KNOWS('Elena', 'Arti') )	0.7350971698760986
+5.0	true	~( KNOWS('Elena', 'Dhanya') )	0.8639729917049408
+5.0	true	~( KNOWS('Elena', 'Alex') )	0.49394315481185913
+5.0	true	~( KNOWS('Steve', 'Elena') )	0.7544728368520737
+5.0	true	~( KNOWS('Elena', 'Sabina') )	0.8913078159093857
+5.0	true	~( KNOWS('Steve', 'Ben') )	0.8050845265388489
+5.0	true	~( KNOWS('Steve', 'Alex') )	0.5690767168998718
+5.0	true	~( KNOWS('Steve', 'Arti') )	0.6811012327671051
+5.0	true	~( KNOWS('Jay', 'Elena') )	0.8162619471549988
+5.0	true	~( KNOWS('Steve', 'Jay') )	0.622564971446991
+5.0	true	~( KNOWS('Steve', 'Sabina') )	0.7364363968372345
+5.0	true	~( KNOWS('Steve', 'Dhanya') )	0.7534778565168381
+5.0	true	~( KNOWS('Jay', 'Steve') )	0.6227418184280396
+5.0	true	~( KNOWS('Jay', 'Alex') )	0.5698549151420593
+5.0	true	~( KNOWS('Jay', 'Arti') )	0.7217096984386444
+5.0	true	~( KNOWS('Jay', 'Dhanya') )	0.794384777545929
+5.0	true	~( KNOWS('Jay', 'Ben') )	0.8148118257522583
+5.0	true	~( KNOWS('Jay', 'Sabina') )	0.7124698758125305
+5.0	true	~( KNOWS('Ben', 'Jay') )	0.8149176687002182
+5.0	true	~( KNOWS('Ben', 'Arti') )	0.7658388167619705
+5.0	true	~( KNOWS('Ben', 'Sabina') )	0.7909693717956543
+5.0	true	~( KNOWS('Ben', 'Steve') )	0.8060725927352905
+5.0	true	~( KNOWS('Alex', 'Elena') )	0.4945333003997803
+5.0	true	~( KNOWS('Ben', 'Alex') )	0.6517631411552429
+5.0	true	~( KNOWS('Alex', 'Jay') )	0.5692544281482697
+5.0	true	~( KNOWS('Alex', 'Ben') )	0.6491450667381287
+5.0	true	~( KNOWS('Alex', 'Arti') )	0.006818056106567383
+5.0	true	~( KNOWS('Alex', 'Steve') )	0.5685994625091553
+5.0	true	~( KNOWS('Alex', 'Sabina') )	0.6647206246852875
+5.0	true	~( KNOWS('Arti', 'Elena') )	0.73619344830513
+5.0	true	~( KNOWS('Arti', 'Jay') )	0.7222844362258911
+5.0	true	~( KNOWS('Arti', 'Steve') )	0.68154376745224
+5.0	true	~( KNOWS('Arti', 'Ben') )	0.7655776590108871
+5.0	true	~( KNOWS('Arti', 'Dhanya') )	0.7267982065677643
+5.0	true	~( KNOWS('Alex', 'Dhanya') )	0.7620018124580383
+5.0	true	~( KNOWS('Arti', 'Sabina') )	0.4824480414390564
+5.0	true	~( KNOWS('Dhanya', 'Elena') )	0.86366406083107
+5.0	true	~( KNOWS('Dhanya', 'Steve') )	0.7525678724050522
+5.0	true	~( KNOWS('Dhanya', 'Jay') )	0.793615847826004
+5.0	true	~( KNOWS('Dhanya', 'Ben') )	0.01954895257949829
+5.0	true	~( KNOWS('Dhanya', 'Alex') )	0.7609905153512955
+5.0	true	~( KNOWS('Dhanya', 'Arti') )	0.7254167795181274
+5.0	true	~( KNOWS('Sabina', 'Steve') )	0.7366964221000671
+5.0	true	~( KNOWS('Dhanya', 'Sabina') )	0.006952345371246338
+5.0	true	~( KNOWS('Sabina', 'Jay') )	0.712958037853241
+5.0	true	~( KNOWS('Sabina', 'Alex') )	0.6656470000743866
+5.0	true	~( KNOWS('Sabina', 'Ben') )	0.7895674109458923
+5.0	true	~( KNOWS('Sabina', 'Elena') )	0.8921329379081726
+5.0	true	~( KNOWS('Sabina', 'Arti') )	0.4827308654785156
+.	false	1.0 * KNOWS('Ben', 'Elena') + -1.0 * KNOWS('Elena', 'Ben') = 0.0	0.9910826086997986
+.	false	1.0 * KNOWS('Ben', 'Dhanya') + -1.0 * KNOWS('Dhanya', 'Ben') = 0.0	0.9901772737503052
+.	false	1.0 * KNOWS('Arti', 'Alex') + -1.0 * KNOWS('Alex', 'Arti') = 0.0	0.9965851306915283
+.	false	1.0 * KNOWS('Sabina', 'Dhanya') + -1.0 * KNOWS('Dhanya', 'Sabina') = 0.0	0.9965177774429321
+.	false	1.0 * KNOWS('Elena', 'Steve') + -1.0 * KNOWS('Steve', 'Elena') = 0.0	0.999365895986557
+.	false	1.0 * KNOWS('Elena', 'Jay') + -1.0 * KNOWS('Jay', 'Elena') = 0.0	0.9999688863754272
+.	false	1.0 * KNOWS('Elena', 'Ben') + -1.0 * KNOWS('Ben', 'Elena') = 0.0	0.9910826086997986
+.	false	1.0 * KNOWS('Elena', 'Alex') + -1.0 * KNOWS('Alex', 'Elena') = 0.0	0.9995850920677185
+.	false	1.0 * KNOWS('Elena', 'Arti') + -1.0 * KNOWS('Arti', 'Elena') = 0.0	0.9989339113235474
+.	false	1.0 * KNOWS('Elena', 'Dhanya') + -1.0 * KNOWS('Dhanya', 'Elena') = 0.0	0.9995814263820648
+.	false	1.0 * KNOWS('Elena', 'Sabina') + -1.0 * KNOWS('Sabina', 'Elena') = 0.0	0.998746246099472
+.	false	1.0 * KNOWS('Steve', 'Elena') + -1.0 * KNOWS('Elena', 'Steve') = 0.0	0.999365895986557
+.	false	1.0 * KNOWS('Steve', 'Jay') + -1.0 * KNOWS('Jay', 'Steve') = 0.0	0.9998560547828674
+.	false	1.0 * KNOWS('Steve', 'Ben') + -1.0 * KNOWS('Ben', 'Steve') = 0.0	0.9988795816898346
+.	false	1.0 * KNOWS('Steve', 'Alex') + -1.0 * KNOWS('Alex', 'Steve') = 0.0	0.9996365904808044
+.	false	1.0 * KNOWS('Steve', 'Arti') + -1.0 * KNOWS('Arti', 'Steve') = 0.0	0.999608039855957
+.	false	1.0 * KNOWS('Steve', 'Dhanya') + -1.0 * KNOWS('Dhanya', 'Steve') = 0.0	0.99908447265625
+.	false	1.0 * KNOWS('Steve', 'Sabina') + -1.0 * KNOWS('Sabina', 'Steve') = 0.0	0.9997466802597046
+.	false	1.0 * KNOWS('Jay', 'Elena') + -1.0 * KNOWS('Elena', 'Jay') = 0.0	0.9999688863754272
+.	false	1.0 * KNOWS('Jay', 'Steve') + -1.0 * KNOWS('Steve', 'Jay') = 0.0	0.9998560547828674
+.	false	1.0 * KNOWS('Jay', 'Ben') + -1.0 * KNOWS('Ben', 'Jay') = 0.0	0.999877005815506
+.	false	1.0 * KNOWS('Jay', 'Alex') + -1.0 * KNOWS('Alex', 'Jay') = 0.0	0.9995423555374146
+.	false	1.0 * KNOWS('Jay', 'Arti') + -1.0 * KNOWS('Arti', 'Jay') = 0.0	0.9994549751281738
+.	false	1.0 * KNOWS('Jay', 'Dhanya') + -1.0 * KNOWS('Dhanya', 'Jay') = 0.0	0.9991529285907745
+.	false	1.0 * KNOWS('Jay', 'Sabina') + -1.0 * KNOWS('Sabina', 'Jay') = 0.0	0.999544620513916
+.	false	1.0 * KNOWS('Ben', 'Steve') + -1.0 * KNOWS('Steve', 'Ben') = 0.0	0.9988795816898346
+.	false	1.0 * KNOWS('Ben', 'Jay') + -1.0 * KNOWS('Jay', 'Ben') = 0.0	0.999877005815506
+.	false	1.0 * KNOWS('Ben', 'Alex') + -1.0 * KNOWS('Alex', 'Ben') = 0.0	0.9977858662605286
+.	false	1.0 * KNOWS('Ben', 'Arti') + -1.0 * KNOWS('Arti', 'Ben') = 0.0	0.9997302293777466
+.	false	1.0 * KNOWS('Ben', 'Sabina') + -1.0 * KNOWS('Sabina', 'Ben') = 0.0	0.998469352722168
+.	false	1.0 * KNOWS('Alex', 'Elena') + -1.0 * KNOWS('Elena', 'Alex') = 0.0	0.9995850920677185
+.	false	1.0 * KNOWS('Alex', 'Steve') + -1.0 * KNOWS('Steve', 'Alex') = 0.0	0.9996365904808044
+.	false	1.0 * KNOWS('Alex', 'Jay') + -1.0 * KNOWS('Jay', 'Alex') = 0.0	0.9995423555374146
+.	false	1.0 * KNOWS('Alex', 'Ben') + -1.0 * KNOWS('Ben', 'Alex') = 0.0	0.9977858662605286
+.	false	1.0 * KNOWS('Alex', 'Arti') + -1.0 * KNOWS('Arti', 'Alex') = 0.0	0.9965851306915283
+.	false	1.0 * KNOWS('Alex', 'Dhanya') + -1.0 * KNOWS('Dhanya', 'Alex') = 0.0	0.9989646077156067
+.	false	1.0 * KNOWS('Alex', 'Sabina') + -1.0 * KNOWS('Sabina', 'Alex') = 0.0	0.9991995096206665
+.	false	1.0 * KNOWS('Arti', 'Elena') + -1.0 * KNOWS('Elena', 'Arti') = 0.0	0.9989339113235474
+.	false	1.0 * KNOWS('Arti', 'Steve') + -1.0 * KNOWS('Steve', 'Arti') = 0.0	0.999608039855957
+.	false	1.0 * KNOWS('Arti', 'Jay') + -1.0 * KNOWS('Jay', 'Arti') = 0.0	0.9994549751281738
+.	false	1.0 * KNOWS('Arti', 'Ben') + -1.0 * KNOWS('Ben', 'Arti') = 0.0	0.9997302293777466
+.	false	1.0 * KNOWS('Arti', 'Dhanya') + -1.0 * KNOWS('Dhanya', 'Arti') = 0.0	0.9986801743507385
+.	false	1.0 * KNOWS('Arti', 'Sabina') + -1.0 * KNOWS('Sabina', 'Arti') = 0.0	0.9998034238815308
+.	false	1.0 * KNOWS('Dhanya', 'Elena') + -1.0 * KNOWS('Elena', 'Dhanya') = 0.0	0.9995814263820648
+.	false	1.0 * KNOWS('Dhanya', 'Steve') + -1.0 * KNOWS('Steve', 'Dhanya') = 0.0	0.99908447265625
+.	false	1.0 * KNOWS('Dhanya', 'Jay') + -1.0 * KNOWS('Jay', 'Dhanya') = 0.0	0.9991529285907745
+.	false	1.0 * KNOWS('Dhanya', 'Ben') + -1.0 * KNOWS('Ben', 'Dhanya') = 0.0	0.9901772737503052
+.	false	1.0 * KNOWS('Dhanya', 'Alex') + -1.0 * KNOWS('Alex', 'Dhanya') = 0.0	0.9989646077156067
+.	false	1.0 * KNOWS('Dhanya', 'Arti') + -1.0 * KNOWS('Arti', 'Dhanya') = 0.0	0.9986801743507385
+.	false	1.0 * KNOWS('Dhanya', 'Sabina') + -1.0 * KNOWS('Sabina', 'Dhanya') = 0.0	0.9965177774429321
+.	false	1.0 * KNOWS('Sabina', 'Elena') + -1.0 * KNOWS('Elena', 'Sabina') = 0.0	0.998746246099472
+.	false	1.0 * KNOWS('Sabina', 'Steve') + -1.0 * KNOWS('Steve', 'Sabina') = 0.0	0.9997466802597046
+.	false	1.0 * KNOWS('Sabina', 'Jay') + -1.0 * KNOWS('Jay', 'Sabina') = 0.0	0.999544620513916
+.	false	1.0 * KNOWS('Sabina', 'Ben') + -1.0 * KNOWS('Ben', 'Sabina') = 0.0	0.998469352722168
+.	false	1.0 * KNOWS('Sabina', 'Alex') + -1.0 * KNOWS('Alex', 'Sabina') = 0.0	0.9991995096206665
+.	false	1.0 * KNOWS('Sabina', 'Arti') + -1.0 * KNOWS('Arti', 'Sabina') = 0.0	0.9998034238815308
