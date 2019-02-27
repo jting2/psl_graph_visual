@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
     main();
 });
@@ -7,8 +9,8 @@ function main() {
 
 	var links = window.pslviz.links;
 
-	var width = 3000;
-	var height = 3000;
+	var width = 2000;
+	var height = 2000;
 
 
 	var color = d3.scaleOrdinal(d3.schemeAccent);
@@ -26,15 +28,19 @@ function main() {
 	// https://bost.ocks.org/mike/selection/ (See how select works)
 
 	var chargeForce = d3.forceManyBody()
-			.strength(function() { return -1000; })
+			.strength(function() { return -100; })
 			.distanceMin(1)
 			.distanceMax(10000);
+
+   var linkForce = d3.forceLink()
+         .id(function(d) { return d.rule; })
+         .strength(function(link) { return 0.0001; });
 
 	// Need to make so I wont have to have specific x and y value (Used to create a force graph)
 	var simulation = d3.forceSimulation()
 					.force('charge', chargeForce)  // causes all elements to attract or repel one another
   	  			    .force('center', d3.forceCenter(width / 2, height / 2))  // centering your elements as a whole about a center point (So it doesnt disappear off the page)
-  	  			    .force("link", d3.forceLink().id(function(d) { return d.rule; })); 
+  	  			    .force("link", linkForce);
 
 
 
@@ -53,18 +59,19 @@ function main() {
 					.enter()
 					.append('g'); //g is used to group SVG shapes together. (In this case node and link)
 
-//adding all link data into 
-	 var link = svg.selectAll(".link")
-      				.data(links)
-    				.enter()
-    				.append("line")
-      				.attr("class", "link");
+   // Adding all link data into
+	var link = svg.selectAll(".link")
+         .data(links)
+         .enter()
+         .append("line")
+         .attr("class", "link");
 
-//Adding all the node_svg data into circle
+   // Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
-					.attr("fill", function(d) { return color(d.group); })
-					.attr('r', 10);
-					// .attr("fill", function(d) { return color(d.group); });
+         .attr("fill", function(d) { return color(d.group); })
+         .attr('r', 10)
+         .attr("data-atom", function(node) { return node.rule; });
+         // .attr("fill", function(d) { return color(d.group); });
 	// console.log(circles);
 
 
