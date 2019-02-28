@@ -1,439 +1,658 @@
 window.pslviz = window.pslviz || {};
-window.pslviz.nodes = [
+
+window.pslviz.nodes =[
     {
-        "rule": "KNOWS('Dhanya', 'Alex')",
-        "group": 1
+        "groundAtoms": "KNOWS('Dhanya', 'Alex')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Ben', 'Dhanya')",
-        "group": 1
+        "groundAtoms": "KNOWS('Ben', 'Dhanya')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Ben', 'Alex')",
-        "group": 1
+        "groundAtoms": "KNOWS('Ben', 'Alex')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Elena', 'Sabina')",
-        "group": 1
+        "groundAtoms": "KNOWS('Elena', 'Sabina')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Ben', 'Elena')",
-        "group": 1
+        "groundAtoms": "KNOWS('Ben', 'Elena')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Ben', 'Sabina')",
-        "group": 1
+        "groundAtoms": "KNOWS('Ben', 'Sabina')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Elena', 'Alex')",
-        "group": 1
+        "groundAtoms": "KNOWS('Elena', 'Alex')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Elena', 'Steve')",
-        "group": 1
+        "groundAtoms": "KNOWS('Elena', 'Steve')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Ben', 'Steve')",
-        "group": 1
+        "groundAtoms": "KNOWS('Ben', 'Steve')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Elena', 'Arti')",
-        "group": 1
+        "groundAtoms": "KNOWS('Elena', 'Arti')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Ben', 'Arti')",
-        "group": 1
+        "groundAtoms": "KNOWS('Ben', 'Arti')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Dhanya', 'Arti')",
-        "group": 1
+        "groundAtoms": "KNOWS('Dhanya', 'Arti')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Elena', 'Jay')",
-        "group": 1
+        "groundAtoms": "KNOWS('Elena', 'Jay')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Ben', 'Jay')",
-        "group": 1
+        "groundAtoms": "KNOWS('Ben', 'Jay')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Dhanya', 'Jay')",
-        "group": 1
+        "groundAtoms": "KNOWS('Dhanya', 'Jay')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Dhanya', 'Sabina')",
-        "group": 1
+        "groundAtoms": "KNOWS('Dhanya', 'Sabina')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Dhanya', 'Steve')",
-        "group": 1
+        "groundAtoms": "KNOWS('Dhanya', 'Steve')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Alex', 'Ben')",
-        "group": 1
+        "groundAtoms": "KNOWS('Alex', 'Ben')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Arti', 'Alex')",
-        "group": 1
+        "groundAtoms": "KNOWS('Arti', 'Alex')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Arti', 'Ben')",
-        "group": 1
+        "groundAtoms": "KNOWS('Arti', 'Ben')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Alex', 'Elena')",
-        "group": 1
+        "groundAtoms": "KNOWS('Alex', 'Elena')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Arti', 'Elena')",
-        "group": 1
+        "groundAtoms": "KNOWS('Arti', 'Elena')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Alex', 'Dhanya')",
-        "group": 1
+        "groundAtoms": "KNOWS('Alex', 'Dhanya')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Arti', 'Dhanya')",
-        "group": 1
+        "groundAtoms": "KNOWS('Arti', 'Dhanya')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Alex', 'Jay')",
-        "group": 1
+        "groundAtoms": "KNOWS('Alex', 'Jay')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Arti', 'Jay')",
-        "group": 1
+        "groundAtoms": "KNOWS('Arti', 'Jay')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Alex', 'Sabina')",
-        "group": 1
+        "groundAtoms": "KNOWS('Alex', 'Sabina')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Arti', 'Sabina')",
-        "group": 1
+        "groundAtoms": "KNOWS('Arti', 'Sabina')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Sabina', 'Dhanya')",
-        "group": 1
+        "groundAtoms": "KNOWS('Sabina', 'Dhanya')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Sabina', 'Alex')",
-        "group": 1
+        "groundAtoms": "KNOWS('Sabina', 'Alex')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Alex', 'Steve')",
-        "group": 1
+        "groundAtoms": "KNOWS('Alex', 'Steve')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Arti', 'Steve')",
-        "group": 1
+        "groundAtoms": "KNOWS('Arti', 'Steve')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Sabina', 'Arti')",
-        "group": 1
+        "groundAtoms": "KNOWS('Sabina', 'Arti')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Dhanya', 'Ben')",
-        "group": 1
+        "groundAtoms": "KNOWS('Dhanya', 'Ben')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Sabina', 'Ben')",
-        "group": 1
+        "groundAtoms": "KNOWS('Sabina', 'Ben')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Sabina', 'Jay')",
-        "group": 1
+        "groundAtoms": "KNOWS('Sabina', 'Jay')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Steve', 'Alex')",
-        "group": 1
+        "groundAtoms": "KNOWS('Steve', 'Alex')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Sabina', 'Steve')",
-        "group": 1
+        "groundAtoms": "KNOWS('Sabina', 'Steve')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Steve', 'Arti')",
-        "group": 1
+        "groundAtoms": "KNOWS('Steve', 'Arti')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Steve', 'Ben')",
-        "group": 1
+        "groundAtoms": "KNOWS('Steve', 'Ben')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Elena', 'Ben')",
-        "group": 1
+        "groundAtoms": "KNOWS('Elena', 'Ben')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Steve', 'Jay')",
-        "group": 1
+        "groundAtoms": "KNOWS('Steve', 'Jay')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Steve', 'Dhanya')",
-        "group": 1
+        "groundAtoms": "KNOWS('Steve', 'Dhanya')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Elena', 'Dhanya')",
-        "group": 1
+        "groundAtoms": "KNOWS('Elena', 'Dhanya')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Steve', 'Sabina')",
-        "group": 1
+        "groundAtoms": "KNOWS('Steve', 'Sabina')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Jay', 'Arti')",
-        "group": 1
+        "groundAtoms": "KNOWS('Jay', 'Arti')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Jay', 'Alex')",
-        "group": 1
+        "groundAtoms": "KNOWS('Jay', 'Alex')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Jay', 'Dhanya')",
-        "group": 1
+        "groundAtoms": "KNOWS('Jay', 'Dhanya')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Jay', 'Steve')",
-        "group": 1
+        "groundAtoms": "KNOWS('Jay', 'Steve')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Alex', 'Arti')",
-        "group": 1
+        "groundAtoms": "KNOWS('Alex', 'Arti')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Steve', 'Elena')",
-        "group": 1
+        "groundAtoms": "KNOWS('Steve', 'Elena')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Jay', 'Sabina')",
-        "group": 1
+        "groundAtoms": "KNOWS('Jay', 'Sabina')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Jay', 'Ben')",
-        "group": 1
+        "groundAtoms": "KNOWS('Jay', 'Ben')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Jay', 'Elena')",
-        "group": 1
+        "groundAtoms": "KNOWS('Jay', 'Elena')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Dhanya', 'Elena')",
-        "group": 1
+        "groundAtoms": "KNOWS('Dhanya', 'Elena')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "KNOWS('Sabina', 'Elena')",
-        "group": 1
+        "groundAtoms": "KNOWS('Sabina', 'Elena')",
+        "group": 4,
+        "type": "open",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Elena', 'Maryland')",
-        "group": 3
+        "groundAtoms": "LIVED('Elena', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Jay', 'Maryland')",
-        "group": 3
+        "groundAtoms": "LIVED('Jay', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Ben', 'Maryland')",
-        "group": 3
+        "groundAtoms": "LIVED('Ben', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Steve', 'Maryland')",
-        "group": 3
+        "groundAtoms": "LIVED('Steve', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Alex', 'Maryland')",
-        "group": 3
+        "groundAtoms": "LIVED('Alex', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Arti', 'Maryland')",
-        "group": 3
+        "groundAtoms": "LIVED('Arti', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Jay', 'New Jersey')",
-        "group": 3
+        "groundAtoms": "LIVED('Jay', 'New Jersey')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Steve', 'New Jersey')",
-        "group": 3
+        "groundAtoms": "LIVED('Steve', 'New Jersey')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Jay', 'Pennsylvania')",
-        "group": 3
+        "groundAtoms": "LIVED('Jay', 'Pennsylvania')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Ben', 'Pennsylvania')",
-        "group": 3
+        "groundAtoms": "LIVED('Ben', 'Pennsylvania')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Jay', 'California')",
-        "group": 3
+        "groundAtoms": "LIVED('Jay', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Dhanya', 'California')",
-        "group": 3
+        "groundAtoms": "LIVED('Dhanya', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Arti', 'California')",
-        "group": 3
+        "groundAtoms": "LIVED('Arti', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Steve', 'California')",
-        "group": 3
+        "groundAtoms": "LIVED('Steve', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Sabina', 'California')",
-        "group": 3
+        "groundAtoms": "LIVED('Sabina', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Ben', 'New York')",
-        "group": 3
+        "groundAtoms": "LIVED('Ben', 'New York')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Arti', 'New York')",
-        "group": 3
+        "groundAtoms": "LIVED('Arti', 'New York')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Sabina', 'New York')",
-        "group": 3
+        "groundAtoms": "LIVED('Sabina', 'New York')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Dhanya', 'Washington')",
-        "group": 3
+        "groundAtoms": "LIVED('Dhanya', 'Washington')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Ben', 'Washington')",
-        "group": 3
+        "groundAtoms": "LIVED('Ben', 'Washington')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIVED('Elena', 'Illinois')",
-        "group": 3
+        "groundAtoms": "LIVED('Elena', 'Illinois')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Elena', 'Machine Learning')",
-        "group": 2
+        "groundAtoms": "LIKES('Elena', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Jay', 'Machine Learning')",
-        "group": 2
+        "groundAtoms": "LIKES('Jay', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Steve', 'Machine Learning')",
-        "group": 2
+        "groundAtoms": "LIKES('Steve', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Alex', 'Machine Learning')",
-        "group": 2
+        "groundAtoms": "LIKES('Alex', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Arti', 'Machine Learning')",
-        "group": 2
+        "groundAtoms": "LIKES('Arti', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Sabina', 'Machine Learning')",
-        "group": 2
+        "groundAtoms": "LIKES('Sabina', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Dhanya', 'Machine Learning')",
-        "group": 2
+        "groundAtoms": "LIKES('Dhanya', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Ben', 'Machine Learning')",
-        "group": 2
+        "groundAtoms": "LIKES('Ben', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Jay', 'Skeeball')",
-        "group": 2
+        "groundAtoms": "LIKES('Jay', 'Skeeball')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Steve', 'Skeeball')",
-        "group": 2
+        "groundAtoms": "LIKES('Steve', 'Skeeball')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Ben', 'Skeeball')",
-        "group": 2
+        "groundAtoms": "LIKES('Ben', 'Skeeball')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Jay', 'Trivia')",
-        "group": 2
+        "groundAtoms": "LIKES('Jay', 'Trivia')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Steve', 'Trivia')",
-        "group": 2
+        "groundAtoms": "LIKES('Steve', 'Trivia')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Sabina', 'Trivia')",
-        "group": 2
+        "groundAtoms": "LIKES('Sabina', 'Trivia')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Steve', 'Sports')",
-        "group": 2
+        "groundAtoms": "LIKES('Steve', 'Sports')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Ben', 'Sports')",
-        "group": 2
+        "groundAtoms": "LIKES('Ben', 'Sports')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Alex', 'Veggies')",
-        "group": 2
+        "groundAtoms": "LIKES('Alex', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Sabina', 'Veggies')",
-        "group": 2
+        "groundAtoms": "LIKES('Sabina', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Jay', 'Veggies')",
-        "group": 2
+        "groundAtoms": "LIKES('Jay', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Dhanya', 'Veggies')",
-        "group": 2
+        "groundAtoms": "LIKES('Dhanya', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Steve', 'Veggies')",
-        "group": 2
+        "groundAtoms": "LIKES('Steve', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Ben', 'Veggies')",
-        "group": 2
+        "groundAtoms": "LIKES('Ben', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Elena', 'Veggies')",
-        "group": 2
+        "groundAtoms": "LIKES('Elena', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Arti', 'Veggies')",
-        "group": 2
+        "groundAtoms": "LIKES('Arti', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Jay', 'Climbing')",
-        "group": 2
+        "groundAtoms": "LIKES('Jay', 'Climbing')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Sabina', 'Climbing')",
-        "group": 2
+        "groundAtoms": "LIKES('Sabina', 'Climbing')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Dhanya', 'Climbing')",
-        "group": 2
+        "groundAtoms": "LIKES('Dhanya', 'Climbing')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Arti', 'Education')",
-        "group": 2
+        "groundAtoms": "LIKES('Arti', 'Education')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Sabina', 'Education')",
-        "group": 2
+        "groundAtoms": "LIKES('Sabina', 'Education')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Ben', 'Hiking')",
-        "group": 2
+        "groundAtoms": "LIKES('Ben', 'Hiking')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Dhanya', 'Hiking')",
-        "group": 2
+        "groundAtoms": "LIKES('Dhanya', 'Hiking')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     },
     {
-        "rule": "LIKES('Steve', 'Hiking')",
-        "group": 2
+        "groundAtoms": "LIKES('Steve', 'Hiking')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
     }
 ]

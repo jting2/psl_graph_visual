@@ -28,13 +28,13 @@ function main() {
 	// https://bost.ocks.org/mike/selection/ (See how select works)
 
 	var chargeForce = d3.forceManyBody()
-			.strength(function() { return -100; })
+			.strength(function() { return -30; })
 			.distanceMin(1)
 			.distanceMax(10000);
 
    var linkForce = d3.forceLink()
-         .id(function(d) { return d.rule; })
-         .strength(function(link) { return 0.0001; });
+         .id(function(d) { return d.groundAtoms; })
+         .strength(function(link) { return 0.001; });
 
 	// Need to make so I wont have to have specific x and y value (Used to create a force graph)
 	var simulation = d3.forceSimulation()
@@ -69,8 +69,13 @@ function main() {
    // Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
          .attr("fill", function(d) { return color(d.group); })
-         .attr('r', 10)
-         .attr("data-atom", function(node) { return node.rule; });
+         .attr('r', 30)
+         .attr("data-atom", function(node) { return node.groundAtoms; })
+         .attr("data-type", function(node){return node.type})
+         .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
          // .attr("fill", function(d) { return color(d.group); });
 	// console.log(circles);
 
@@ -102,6 +107,21 @@ function ticked() {
         })
   };
 
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+};
 
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+};
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+};
 
 }
