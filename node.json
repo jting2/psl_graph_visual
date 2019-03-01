@@ -1,6 +1,325 @@
 window.pslviz = window.pslviz || {};
 
 window.pslviz.nodes =[
+    
+    {
+        "groundAtoms": "LIVED('Elena', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Jay', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Ben', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Steve', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Alex', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Arti', 'Maryland')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Jay', 'New Jersey')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Steve', 'New Jersey')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Jay', 'Pennsylvania')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Ben', 'Pennsylvania')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Jay', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Dhanya', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Arti', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Steve', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Sabina', 'California')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Ben', 'New York')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Arti', 'New York')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Sabina', 'New York')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Dhanya', 'Washington')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Ben', 'Washington')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Elena', 'Illinois')",
+        "group": 2,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Elena', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Alex', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Arti', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Dhanya', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Machine Learning')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Skeeball')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Skeeball')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Skeeball')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Trivia')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Trivia')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Trivia')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Sports')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Sports')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Alex', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Dhanya', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Elena', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Arti', 'Veggies')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Climbing')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Climbing')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Dhanya', 'Climbing')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Arti', 'Education')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Education')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Hiking')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Dhanya', 'Hiking')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Hiking')",
+        "group": 3,
+        "type": "closed",
+        "unobserved": false
+    },
     {
         "groundAtoms": "KNOWS('Dhanya', 'Alex')",
         "group": 4,
@@ -335,324 +654,6 @@ window.pslviz.nodes =[
         "groundAtoms": "KNOWS('Sabina', 'Elena')",
         "group": 4,
         "type": "open",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Elena', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Jay', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Ben', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Steve', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Alex', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Arti', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Jay', 'New Jersey')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Steve', 'New Jersey')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Jay', 'Pennsylvania')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Ben', 'Pennsylvania')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Jay', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Dhanya', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Arti', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Steve', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Sabina', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Ben', 'New York')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Arti', 'New York')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Sabina', 'New York')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Dhanya', 'Washington')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Ben', 'Washington')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Elena', 'Illinois')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Elena', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Alex', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Arti', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Dhanya', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Skeeball')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Skeeball')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Skeeball')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Trivia')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Trivia')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Trivia')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Sports')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Sports')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Alex', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Dhanya', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Elena', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Arti', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Climbing')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Climbing')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Dhanya', 'Climbing')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Arti', 'Education')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Education')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Hiking')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Dhanya', 'Hiking')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Hiking')",
-        "group": 3,
-        "type": "closed",
         "unobserved": false
     }
 ]

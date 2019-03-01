@@ -13,11 +13,21 @@ function main() {
 	var height = 2000;
 
 
+	var tip = d3.tip()
+  			.attr('class', 'd3-tip')
+ 			
+   			.html(function(d) {
+    			return "<strong>Frequency:</strong> <span style='color:red'>" + d.type + "</span>";
+  			});
+
+
 	var color = d3.scaleOrdinal(d3.schemeAccent);
 	var svg = d3.select("#psl_graph")
 			.append("svg")
     		.attr("width", width)
     		.attr("height", height);
+
+    svg.call(tip);
 	// https://medium.com/@sxywu/understanding-the-force-ef1237017d5
 	// https://medium.com/@bryony_17728/d3-js-two-v-4-network-charts-compared-8d3c66b0499c
 	// https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
@@ -73,9 +83,12 @@ function main() {
          .attr("data-atom", function(node) { return node.groundAtoms; })
          .attr("data-type", function(node){return node.type})
          .call(d3.drag()
-          .on("start", dragstarted)
-          .on("drag", dragged)
-          .on("end", dragended));
+         .on("start", dragstarted)
+         .on("drag", dragged)
+         .on("end", dragended))
+       	 .on('mouseover', tip.show)
+      	 .on('mouseout', tip.hide)
+;
          // .attr("fill", function(d) { return color(d.group); });
 	// console.log(circles);
 
