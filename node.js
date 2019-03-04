@@ -17,7 +17,7 @@ function main() {
   			.attr('class', 'd3-tip')
  			
    			.html(function(d) {
-    			return "<strong>Frequency:</strong> <span style='color:red'>" + d.type + "</span>";
+    			return "Group: " + d.group ;
   			});
 
 
