@@ -1,659 +1,1421 @@
 window.pslviz = window.pslviz || {};
 
-window.pslviz.nodes =[
-    
-    {
-        "groundAtoms": "LIVED('Elena', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Jay', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Ben', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Steve', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Alex', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Arti', 'Maryland')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Jay', 'New Jersey')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Steve', 'New Jersey')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Jay', 'Pennsylvania')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Ben', 'Pennsylvania')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Jay', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Dhanya', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Arti', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Steve', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Sabina', 'California')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Ben', 'New York')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Arti', 'New York')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Sabina', 'New York')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Dhanya', 'Washington')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Ben', 'Washington')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIVED('Elena', 'Illinois')",
-        "group": 2,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Elena', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Alex', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Arti', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Dhanya', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Machine Learning')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Skeeball')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Skeeball')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Skeeball')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Trivia')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Trivia')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Trivia')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Sports')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Sports')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Alex', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Dhanya', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Elena', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Arti', 'Veggies')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Jay', 'Climbing')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Climbing')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Dhanya', 'Climbing')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Arti', 'Education')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Sabina', 'Education')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Ben', 'Hiking')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Dhanya', 'Hiking')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
-    {
-        "groundAtoms": "LIKES('Steve', 'Hiking')",
-        "group": 3,
-        "type": "closed",
-        "unobserved": false
-    },
+window.pslviz.nodes = [
     {
         "groundAtoms": "KNOWS('Dhanya', 'Alex')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Ben', 'Dhanya')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Ben', 'Alex')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Elena', 'Sabina')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Ben', 'Elena')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Ben', 'Sabina')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Elena', 'Alex')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Elena', 'Steve')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Ben', 'Steve')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Elena', 'Arti')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Ben', 'Arti')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Dhanya', 'Arti')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Elena', 'Jay')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Ben', 'Jay')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Dhanya', 'Jay')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Dhanya', 'Sabina')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Dhanya', 'Steve')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Alex', 'Ben')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Arti', 'Alex')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Arti', 'Ben')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Alex', 'Elena')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Arti', 'Elena')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Alex', 'Dhanya')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Arti', 'Dhanya')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Alex', 'Jay')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Arti', 'Jay')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Alex', 'Sabina')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Arti', 'Sabina')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Sabina', 'Dhanya')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Sabina', 'Alex')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Alex', 'Steve')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Arti', 'Steve')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Sabina', 'Arti')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Dhanya', 'Ben')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Sabina', 'Ben')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Sabina', 'Jay')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Steve', 'Alex')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Sabina', 'Steve')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Steve', 'Arti')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Steve', 'Ben')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Elena', 'Ben')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Steve', 'Jay')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Steve', 'Dhanya')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Elena', 'Dhanya')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Steve', 'Sabina')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Jay', 'Arti')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Jay', 'Alex')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Jay', 'Dhanya')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Jay', 'Steve')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Alex', 'Arti')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Steve', 'Elena')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Jay', 'Sabina')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Jay', 'Ben')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Jay', 'Elena')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Dhanya', 'Elena')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     },
     {
         "groundAtoms": "KNOWS('Sabina', 'Elena')",
-        "group": 4,
+        "group": 1,
         "type": "open",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Elena', 'Maryland')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Jay', 'Maryland')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Ben', 'Maryland')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Steve', 'Maryland')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Alex', 'Maryland')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Arti', 'Maryland')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Jay', 'New Jersey')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Steve', 'New Jersey')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Jay', 'Pennsylvania')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Ben', 'Pennsylvania')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Jay', 'California')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Dhanya', 'California')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Arti', 'California')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Steve', 'California')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Sabina', 'California')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Ben', 'New York')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Arti', 'New York')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Sabina', 'New York')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Dhanya', 'Washington')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Ben', 'Washington')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIVED('Elena', 'Illinois')",
+        "group": 3,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Elena', 'Machine Learning')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Machine Learning')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Machine Learning')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Alex', 'Machine Learning')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Arti', 'Machine Learning')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Machine Learning')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Dhanya', 'Machine Learning')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Machine Learning')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Skeeball')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Skeeball')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Skeeball')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Trivia')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Trivia')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Trivia')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Sports')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Sports')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Alex', 'Veggies')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Veggies')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Veggies')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Dhanya', 'Veggies')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Veggies')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Veggies')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Elena', 'Veggies')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Arti', 'Veggies')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Jay', 'Climbing')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Climbing')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Dhanya', 'Climbing')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Arti', 'Education')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Sabina', 'Education')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Ben', 'Hiking')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Dhanya', 'Hiking')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
+        "unobserved": false
+    },
+    {
+        "groundAtoms": "LIKES('Steve', 'Hiking')",
+        "group": 2,
+        "type": "closed",
+        "test": [
+            "a\n",
+            "b \n",
+            "c\n ",
+            "d\n",
+            "e\n"
+        ],
         "unobserved": false
     }
 ]

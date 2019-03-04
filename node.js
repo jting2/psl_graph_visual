@@ -17,7 +17,7 @@ function main() {
   			.attr('class', 'd3-tip')
  			
    			.html(function(d) {
-    			return "Group: " + d.group ;
+    			return "Group: " + d.test ;
   			});
 
 
@@ -44,7 +44,7 @@ function main() {
 
    var linkForce = d3.forceLink()
          .id(function(d) { return d.groundAtoms; })
-         .strength(function(link) { return 0.001; });
+         .strength(function(link) { return 0.1; });
 
 	// Need to make so I wont have to have specific x and y value (Used to create a force graph)
 	var simulation = d3.forceSimulation()
@@ -54,20 +54,12 @@ function main() {
 
 
 
-	// Tried getting different color for nodes but not working?
-	// var color = d3.scaleOrdinal().range(d3.schemeCategory20);
 
-	// var svg = d3.select('#psl_graph')
-	// 				.append('svg')
-	// 				.attr('width', width)
-	// 				.attr('height', height)
-	//Adding the nodes data into the svg
+/************************************************
 
-	var node_svg = svg
-					.selectAll('g')  
-					.data(nodes)
-					.enter()
-					.append('g'); //g is used to group SVG shapes together. (In this case node and link)
+//Why is it when I instatiate link first node goes to the front?
+
+/********************************************/
 
    // Adding all link data into
 	var link = svg.selectAll(".link")
@@ -76,16 +68,26 @@ function main() {
          .append("line")
          .attr("class", "link");
 
+
+	//Adding the nodes data into the svg
+
+	var node_svg = svg
+					.selectAll('g')  
+					.data(nodes)
+					.enter()
+					.append('g'); //g is used to group SVG shapes together. (In this case node and link)
+
+
    // Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
          .attr("fill", function(d) { return color(d.group); })
-         .attr('r', 30)
+         .attr('r', 10)
          .attr("data-atom", function(node) { return node.groundAtoms; })
          .attr("data-type", function(node){return node.type})
-         .call(d3.drag()
-         .on("start", dragstarted)
-         .on("drag", dragged)
-         .on("end", dragended))
+         // .call(d3.drag()
+         // .on("start", dragstarted)
+         // .on("drag", dragged)
+         // .on("end", dragended))
        	 .on('mouseover', tip.show)
       	 .on('mouseout', tip.hide)
 ;
