@@ -12,6 +12,13 @@ function main() {
 	var width = 2000;
 	var height = 2000;
 
+   var OTHER_EDGE_OPACITY = 0.1;
+   var OTHER_NODE_OPACITY = 0.2;
+   var NEIGHBOR_NODE_OPACITY = 0.6;
+   var SELF_EDGE_OPACITY = 1.0;
+   var SELF_NODE_OPACITY = 1.0;
+   var SELECTED_NODE_STOKE_WIDTH = '2px';
+   var SELECTED_NODE_STOKE_COLOR = '#8e8e8e';
 
 	var tip = d3.tip()
   			.attr('class', 'd3-tip')
@@ -44,7 +51,7 @@ function main() {
 
    var linkForce = d3.forceLink()
          .id(function(d) { return d.groundAtoms; })
-         .strength(function(link) { return 0.1; });
+         .strength(function(link) { return 0.001; });
 
 	// Need to make so I wont have to have specific x and y value (Used to create a force graph)
 	var simulation = d3.forceSimulation()
@@ -66,7 +73,10 @@ function main() {
          .data(links)
          .enter()
          .append("line")
-         .attr("class", "link");
+         .attr("class", "link")
+         .attr("data-source", function(edge) { return edge.source; })
+         .attr("data-target", function(edge) { return edge.target; })
+   ;
 
 
 	//Adding the nodes data into the svg
@@ -77,19 +87,38 @@ function main() {
 					.enter()
 					.append('g'); //g is used to group SVG shapes together. (In this case node and link)
 
-
    // Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
          .attr("fill", function(d) { return color(d.group); })
          .attr('r', 10)
+         .attr('stroke', SELECTED_NODE_STOKE_COLOR)
+         .attr('stroke-width', '0px')
          .attr("data-atom", function(node) { return node.groundAtoms; })
-         .attr("data-type", function(node){return node.type})
+         .attr("data-type", function(node) { return node.type; })
          // .call(d3.drag()
          // .on("start", dragstarted)
          // .on("drag", dragged)
          // .on("end", dragended))
-       	 .on('mouseover', tip.show)
-      	 .on('mouseout', tip.hide)
+         .on('mouseover', tip.show)
+         .on('mouseout', tip.hide)
+         .on('click', function(element) {
+               // All element.
+               $('circle').css('opacity', OTHER_NODE_OPACITY);;
+               $('circle').css('stroke-width', '0px');
+               $('line').css('opacity', OTHER_EDGE_OPACITY);
+
+               // Neighbors.
+               var links = $('line[data-target="' + element.groundAtoms + '"]');
+               links.each(function(index) {
+                  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+                  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+               });
+
+               // Self.
+               $('circle[data-atom="' + element.groundAtoms + '"]').css('opacity', SELF_NODE_OPACITY);
+               $('circle[data-atom="' + element.groundAtoms + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
+               $('line[data-target="' + element.groundAtoms + '"]').css('opacity', SELF_EDGE_OPACITY);
+         })
 ;
          // .attr("fill", function(d) { return color(d.group); });
 	// console.log(circles);
