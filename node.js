@@ -89,16 +89,17 @@ function main() {
 
    // Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
-         .attr("fill", function(d) { return color(d.group); })
-         .attr('r', 20)
-         .attr('stroke', SELECTED_NODE_STOKE_COLOR)
-         .attr('stroke-width', '0px')
-         .attr("data-atom", function(node) { return node.groundAtom; })
-         .attr("data-type", function(node) { return node.type; })
-         .attr('stroke-width', SELECTED_NODE_STOKE_WIDTH)
-         .on('mouseover', tip.show)
-         .on('mouseout', tip.hide)
-         .on('click', function(element) {
+			.attr("class", "circle")
+        	.attr("fill", function(d) { return color(d.group); })
+        	.attr('r', 20)
+        	.attr('stroke', SELECTED_NODE_STOKE_COLOR)
+        	.attr('stroke-width', '0px')
+        	.attr("data-atom", function(node) { return node.groundAtom; })
+        	.attr("data-type", function(node) { return node.type; })
+        	.attr('stroke-width', SELECTED_NODE_STOKE_WIDTH)
+        	.on('mouseover', tip.show)
+        	.on('mouseout', tip.hide)
+         	.on('click', function(element) {
          		// Removing all text 
          		d3.select('#psl_graph')
          				.selectAll('g')
@@ -127,10 +128,15 @@ function main() {
 
 
 	var openNode = $('circle[data-type=\'open\']');
-	// openNode.each(function(index){
+	var text = openNode.each(function(index){
+		// Is there an insertBefore function??
+		$('<text></text>').insertBefore(openNode[index])
 		
-	// });
+	});
 	
+
+	
+
 	     /* Create the text for each block */
 	var text = node_svg.append('text')
 	    .attr('x', 12)
