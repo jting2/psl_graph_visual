@@ -95,10 +95,15 @@ function main() {
          .attr('stroke-width', '0px')
          .attr("data-atom", function(node) { return node.groundAtom; })
          .attr("data-type", function(node) { return node.type; })
-         
+         .attr('stroke-width', SELECTED_NODE_STOKE_WIDTH)
          .on('mouseover', tip.show)
          .on('mouseout', tip.hide)
          .on('click', function(element) {
+         		// Removing all text 
+         		d3.select('#psl_graph')
+         				.selectAll('g')
+         				.select('text')
+         				.remove();
                // All element.
                $('circle').css('opacity', OTHER_NODE_OPACITY);;
                $('circle').css('stroke-width', '0px');
@@ -107,8 +112,10 @@ function main() {
                // Neighbors.
                var links = $('line[data-target="' + element.groundAtom + '"]');
                links.each(function(index) {
+               		console.log(index)
                   $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
                   $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+
                });
 
                // Self.
@@ -118,15 +125,29 @@ function main() {
          })
 ;
 
+
+	var openNode = $('circle[data-type=\'open\']');
+	// openNode.each(function(index){
+		
+	// });
+	
 	     /* Create the text for each block */
 	var text = node_svg.append('text')
 	    .attr('x', 12)
-	    .attr('font-size', 5)
+	    .attr('font-size', 8)
 	    .attr('dy', '.35em')
 	    .text(function(d) { return d.groundAtom; })
+	    
 	;
          // .attr("fill", function(d) { return color(d.group); });
 	// console.log(circles);
+
+
+// Obtaining all the open nodes
+	// var openNode = d3.select('#psl_graph')
+	// 		.selectAll('g')
+	// 		.select('circle[data-type=\'open\']')
+	// 		;
 
 
 
@@ -154,7 +175,7 @@ function ticked() {
         });
   
 
-	text.attr("x", function(d){return d.x;})
+	text.attr("x", function(d){return d.x - 30;})
 	    .attr("y", function(d){return d.y;});
 
   };
