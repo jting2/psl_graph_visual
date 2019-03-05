@@ -24,7 +24,7 @@ function main() {
   			.attr('class', 'd3-tip')
  			
    			.html(function(d) {
-    			return "Group: " + d.test ;
+    			return "Type: " + d.type ;
   			});
 
 
@@ -50,7 +50,7 @@ function main() {
 			.distanceMax(10000);
 
    var linkForce = d3.forceLink()
-         .id(function(d) { return d.groundAtoms; })
+         .id(function(d) { return d.groundAtom; })
          .strength(function(link) { return 0.001; });
 
 	// Need to make so I wont have to have specific x and y value (Used to create a force graph)
@@ -90,15 +90,12 @@ function main() {
    // Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
          .attr("fill", function(d) { return color(d.group); })
-         .attr('r', 10)
+         .attr('r', 20)
          .attr('stroke', SELECTED_NODE_STOKE_COLOR)
          .attr('stroke-width', '0px')
-         .attr("data-atom", function(node) { return node.groundAtoms; })
+         .attr("data-atom", function(node) { return node.groundAtom; })
          .attr("data-type", function(node) { return node.type; })
-         // .call(d3.drag()
-         // .on("start", dragstarted)
-         // .on("drag", dragged)
-         // .on("end", dragended))
+         
          .on('mouseover', tip.show)
          .on('mouseout', tip.hide)
          .on('click', function(element) {
@@ -108,18 +105,26 @@ function main() {
                $('line').css('opacity', OTHER_EDGE_OPACITY);
 
                // Neighbors.
-               var links = $('line[data-target="' + element.groundAtoms + '"]');
+               var links = $('line[data-target="' + element.groundAtom + '"]');
                links.each(function(index) {
                   $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
                   $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
                });
 
                // Self.
-               $('circle[data-atom="' + element.groundAtoms + '"]').css('opacity', SELF_NODE_OPACITY);
-               $('circle[data-atom="' + element.groundAtoms + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
-               $('line[data-target="' + element.groundAtoms + '"]').css('opacity', SELF_EDGE_OPACITY);
+               $('circle[data-atom="' + element.groundAtom + '"]').css('opacity', SELF_NODE_OPACITY);
+               $('circle[data-atom="' + element.groundAtom + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
+               $('line[data-target="' + element.groundAtom + '"]').css('opacity', SELF_EDGE_OPACITY);
          })
 ;
+
+	     /* Create the text for each block */
+	var text = node_svg.append('text')
+	    .attr('x', 12)
+	    .attr('font-size', 5)
+	    .attr('dy', '.35em')
+	    .text(function(d) { return d.groundAtom; })
+	;
          // .attr("fill", function(d) { return color(d.group); });
 	// console.log(circles);
 
@@ -137,35 +142,23 @@ simulation.on("tick", ticked);
 
 //This function is called to update position of node-link
 function ticked() {
-    link
-        .attr("x1", function(d) { return d.source.x; })
+    link.attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
 
 
    
-   circles
-        .attr("transform", function(d) {
+   circles.attr("transform", function(d) {
           return "translate(" + d.x + "," + d.y + ")";
-        })
+        });
+  
+
+	text.attr("x", function(d){return d.x;})
+	    .attr("y", function(d){return d.y;});
+
   };
 
-function dragstarted(d) {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-  d.fx = d.x;
-  d.fy = d.y;
-};
-
-function dragged(d) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
-};
-
-function dragended(d) {
-  if (!d3.event.active) simulation.alphaTarget(0);
-  d.fx = null;
-  d.fy = null;
-};
+  	
 
 }
