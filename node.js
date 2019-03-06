@@ -20,6 +20,10 @@ function main() {
    var SELECTED_NODE_STOKE_WIDTH = '2px';
    var SELECTED_NODE_STOKE_COLOR = '#8e8e8e';
 
+
+
+
+
 	var tip = d3.tip()
   			.attr('class', 'd3-tip')
  			
@@ -29,7 +33,7 @@ function main() {
 
 
 	var showRule = d3.tip()
-			.attr('class', 'rules')
+			.attr('class', 'd3-tip')
 			.html(function(d){
 				return 'Rule' + d.rule;
 			});
@@ -87,6 +91,7 @@ function main() {
          		.attr("class", "link")
          		.attr("data-source", function(edge) { return edge.source; })
          		.attr("data-target", function(edge) { return edge.target; })
+			.attr("data-rule", function(d){ return d.rule;})
 			.on('mouseover', showRule.show)
 			.on('mouseout', showRule.hide) 
    ;
@@ -94,15 +99,14 @@ function main() {
 
 	//Adding the nodes data into the svg
 
-	var node_svg = svg
-					.selectAll('g')  
-					.data(nodes)
-					.enter()
-					.append('g'); //g is used to group SVG shapes together. (In this case node and link)
+	var node_svg = svg.selectAll('g')  
+		.data(nodes)
+		.enter()
+		.append('g'); //g is used to group SVG shapes together. (In this case node and link)
 
    // Adding all the node_svg data into circle
 	var circles =  node_svg.append('circle')
-			.attr("class", "circle")
+		.attr("class", "circle")
         	.attr("fill", function(d) { return color(d.group); })
         	.attr('r', 20)
         	.attr('stroke', SELECTED_NODE_STOKE_COLOR)
@@ -113,33 +117,34 @@ function main() {
         	.on('mouseover', tip.show)
         	.on('mouseout', tip.hide)
          	.on('click', function(element) {
-         		// Removing all text.
-               $('circle ~ text').hide();
+			// Removing all text for circle and sidebar.
+		       $('circle ~ text').hide();
+		       $('.sideBar').empty();	// Removing all element inside g
+		       // All element.
+		       $('circle').css('opacity', OTHER_NODE_OPACITY);;
+		       $('circle').css('stroke-width', '0px');
+		       $('line').hide();
 
-               // All element.
-               $('circle').css('opacity', OTHER_NODE_OPACITY);;
-               $('circle').css('stroke-width', '0px');
-               $('line').hide();
-//css('opacity', OTHER_EDGE_OPACITY);
-
-               // Neighbors.
-               var links = $('line[data-target="' + element.groundAtom + '"]');
-               links.each(function(index) {
-                  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
-                  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
-                  
-                 // Making neighboring node's text show 
-                  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"] ~ text').show();
-                  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"] ~ text').show();
+		       // Neighbors and rules to display.
+		       var links = $('line[data-target="' + element.groundAtom + '"]');
 
 
+
+		       links.each(function(index) {
+			  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+			  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+			  
+			 // Making neighboring node's text show 
+			  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"] ~ text').show();
+			  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"] ~ text').show();
+
+			  $('.sideBar').append('<p>' + links[index].getAttribute('data-rule') + '</p>');
                });
 
                // Self.
                $('circle[data-atom="' + element.groundAtom + '"]').css('opacity', SELF_NODE_OPACITY);
                $('circle[data-atom="' + element.groundAtom + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
                $('line[data-target="' + element.groundAtom + '"]').show();
-//css('opacity', SELF_EDGE_OPACITY);
        
                // Add text to clicked node 
                $('circle[data-atom="' + element.groundAtom + '"] ~ text').show();
@@ -158,10 +163,6 @@ function main() {
    // Hide all closed node text.
    	$('circle[data-type="closed"] ~ text').hide();
 
-   // TODO(jason): You will need to have some "reset" when nothing is selected.
-
-	var oldGraph = $('#psl_graph').html();
-	document.getElementById('resetMe').onclick = function(){$('#psl_graph').html(oldGraph);};
 
 
 
@@ -198,32 +199,13 @@ function ticked() {
 // Creating Legends
 
 
+$('#psl_graph').data('old-state', $('#psl_graph').html());
 
+document.getElementById('resetMe').onclick = function(){
 
-var svg = d3.select('#sideBar')
-		.append('svg')
-		.attr('height',2000)
-		.attr('width', 600);
+	$('#psl_graph').html($('#psl_graph').data('old-state'));
+};
 
-
-var ruleBar = svg.append('g')
-		.attr('class', 'scroll')
-		.attr('transform','translate(-20,50)')
-		 
-
-;
 	
-ruleBar.selectAll('text')
-		.data(links)
-		.enter()
-		.append('text')
-		.attr('x', 20)
-		.attr('y', function(d,i){
-				return (i -1) * 20;
-				})
-		.text(function(link){
-			return link.rule;
-			})
-		.attr('font-size', 10)
-;
+
 }
