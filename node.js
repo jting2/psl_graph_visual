@@ -100,11 +100,9 @@ function main() {
         	.on('mouseover', tip.show)
         	.on('mouseout', tip.hide)
          	.on('click', function(element) {
-         		// Removing all text 
-         		d3.select('#psl_graph')
-         				.selectAll('g')
-         				.select('text')
-         				.remove();
+         		// Removing all text.
+               $('circle ~ text').hide();
+
                // All element.
                $('circle').css('opacity', OTHER_NODE_OPACITY);;
                $('circle').css('stroke-width', '0px');
@@ -113,9 +111,13 @@ function main() {
                // Neighbors.
                var links = $('line[data-target="' + element.groundAtom + '"]');
                links.each(function(index) {
-               		console.log(index)
                   $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
                   $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+                  
+                 // Making neighboring node's text show 
+                  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"] ~ text').show();
+                  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"] ~ text').show();
+
 
                });
 
@@ -123,28 +125,27 @@ function main() {
                $('circle[data-atom="' + element.groundAtom + '"]').css('opacity', SELF_NODE_OPACITY);
                $('circle[data-atom="' + element.groundAtom + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
                $('line[data-target="' + element.groundAtom + '"]').css('opacity', SELF_EDGE_OPACITY);
-         })
+       
+               // Add text to clicked node 
+               $('circle[data-atom="' + element.groundAtom + '"] ~ text').show();
+       })
 ;
-
-
-	var openNode = $('circle[data-type=\'open\']');
-	var text = openNode.each(function(index){
-		// Is there an insertBefore function??
-		$('<text></text>').insertBefore(openNode[index])
-		
-	});
-	
-
-	
 
 	     /* Create the text for each block */
 	var text = node_svg.append('text')
 	    .attr('x', 12)
 	    .attr('font-size', 8)
 	    .attr('dy', '.35em')
-	    .text(function(d) { return d.groundAtom; })
+	    .text(function(node) { return node.groundAtom; })
 	    
 	;
+
+   // Hide all closed node text.
+   $('circle[data-type="closed"] ~ text').hide();
+
+   // TODO(jason): You will need to have some "reset" when nothing is selected.
+   //  Reset opacities, text, etc.
+
          // .attr("fill", function(d) { return color(d.group); });
 	// console.log(circles);
 
