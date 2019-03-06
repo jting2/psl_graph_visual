@@ -4,13 +4,14 @@
 
 		<script src="http://d3js.org/d3.v5.min.js"></script>
 		 <script src="d3-tip.js"></script>
-		<!-- <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/4B6EDD90-B158-8242-81C1-36D28534EDF2/main.js" charset="UTF-8"></script> -->
 		<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
 		<script src="node.js"></script>
 
 		<!-- Data -->
 		<script src='node.json'></script>
 		<script src="link.json"></script>
+		<script>
+		</script>
 
 		<!-- <script>selectableForceDirectedGraph();</script> -->
 
@@ -43,9 +44,37 @@
 			  stroke: #fff;
 			  shape-rendering: crispEdges;
 			}
+
+
+  			.scroll {
+            			width:45px;
+            			height: 5px;
+           			padding: 0px;
+            			overflow: auto;
+           			font: 10px sans-serif;
+            			background: yellow;
+            			border: 1px solid #bbb;
+            			background-color: #cccccc;
+            			box-shadow: 2px 2px 1px #888;
+        		}
+
+
+
+
+ 			.sideBar {
+				overflow: auto;
+    				float:left;
+    				margin-right:1em;
+				height: 200px;
+				width: 600px;
+			}	
+			
+
 		</style>
 	</head>
 	<body>
+		<div> <input id = 'resetMe' type="reset" onclick='resetFunc()' value="Reset"></div>
 		<div align='center' id="psl_graph"></div>
+		<div id = 'sideBar' class = 'sideBar'></div>
 	</body>
 </html>

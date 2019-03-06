@@ -9,8 +9,8 @@ function main() {
 
 	var links = window.pslviz.links;
 
-	var width = 2000;
-	var height = 2000;
+	var width = 1000;
+	var height = 1000;
 
    var OTHER_EDGE_OPACITY = 0.1;
    var OTHER_NODE_OPACITY = 0.2;
@@ -28,13 +28,24 @@ function main() {
   			});
 
 
+	var showRule = d3.tip()
+			.attr('class', 'rules')
+			.html(function(d){
+				return 'Rule' + d.rule;
+			});
+
+
 	var color = d3.scaleOrdinal(d3.schemeAccent);
 	var svg = d3.select("#psl_graph")
 			.append("svg")
     		.attr("width", width)
     		.attr("height", height);
 
-    svg.call(tip);
+	
+
+    	svg.call(tip);
+	svg.call(showRule);
+	
 	// https://medium.com/@sxywu/understanding-the-force-ef1237017d5
 	// https://medium.com/@bryony_17728/d3-js-two-v-4-network-charts-compared-8d3c66b0499c
 	// https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
@@ -70,12 +81,14 @@ function main() {
 
    // Adding all link data into
 	var link = svg.selectAll(".link")
-         .data(links)
-         .enter()
-         .append("line")
-         .attr("class", "link")
-         .attr("data-source", function(edge) { return edge.source; })
-         .attr("data-target", function(edge) { return edge.target; })
+			.data(links)
+         		.enter()
+         		.append("line")
+         		.attr("class", "link")
+         		.attr("data-source", function(edge) { return edge.source; })
+         		.attr("data-target", function(edge) { return edge.target; })
+			.on('mouseover', showRule.show)
+			.on('mouseout', showRule.hide) 
    ;
 
 
@@ -106,7 +119,8 @@ function main() {
                // All element.
                $('circle').css('opacity', OTHER_NODE_OPACITY);;
                $('circle').css('stroke-width', '0px');
-               $('line').css('opacity', OTHER_EDGE_OPACITY);
+               $('line').hide();
+//css('opacity', OTHER_EDGE_OPACITY);
 
                // Neighbors.
                var links = $('line[data-target="' + element.groundAtom + '"]');
@@ -124,7 +138,8 @@ function main() {
                // Self.
                $('circle[data-atom="' + element.groundAtom + '"]').css('opacity', SELF_NODE_OPACITY);
                $('circle[data-atom="' + element.groundAtom + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
-               $('line[data-target="' + element.groundAtom + '"]').css('opacity', SELF_EDGE_OPACITY);
+               $('line[data-target="' + element.groundAtom + '"]').show();
+//css('opacity', SELF_EDGE_OPACITY);
        
                // Add text to clicked node 
                $('circle[data-atom="' + element.groundAtom + '"] ~ text').show();
@@ -141,20 +156,12 @@ function main() {
 	;
 
    // Hide all closed node text.
-   $('circle[data-type="closed"] ~ text').hide();
+   	$('circle[data-type="closed"] ~ text').hide();
 
    // TODO(jason): You will need to have some "reset" when nothing is selected.
-   //  Reset opacities, text, etc.
 
-         // .attr("fill", function(d) { return color(d.group); });
-	// console.log(circles);
-
-
-// Obtaining all the open nodes
-	// var openNode = d3.select('#psl_graph')
-	// 		.selectAll('g')
-	// 		.select('circle[data-type=\'open\']')
-	// 		;
+	var oldGraph = $('#psl_graph').html();
+	document.getElementById('resetMe').onclick = function(){$('#psl_graph').html(oldGraph);};
 
 
 
@@ -187,6 +194,36 @@ function ticked() {
 
   };
 
-  	
+  
+// Creating Legends
 
+
+
+
+var svg = d3.select('#sideBar')
+		.append('svg')
+		.attr('height',2000)
+		.attr('width', 600);
+
+
+var ruleBar = svg.append('g')
+		.attr('class', 'scroll')
+		.attr('transform','translate(-20,50)')
+		 
+
+;
+	
+ruleBar.selectAll('text')
+		.data(links)
+		.enter()
+		.append('text')
+		.attr('x', 20)
+		.attr('y', function(d,i){
+				return (i -1) * 20;
+				})
+		.text(function(link){
+			return link.rule;
+			})
+		.attr('font-size', 10)
+;
 }
