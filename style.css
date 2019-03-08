@@ -30,3 +30,11 @@
    margin-right: 1em;
    height: 300px;
 }
+
+
+function reset(){
+
+  $('circle').css('opacity', 1.0);
+
+
+}

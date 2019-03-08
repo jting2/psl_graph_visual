@@ -15,6 +15,24 @@
 		<link rel='stylesheet' href='style.css'>
 	</head>
 	<body>
+
+
+  <script>
+    function reset(){
+      // Setting the opacity and stroke width of all nodes to default
+      $('circle').css('opacity', 1.0);
+      $('circle').css('stroke-width', 2.0);
+
+      // Showing all the lines
+      $('line').show();
+      // Showing text of open nodes
+      $('circle ~ text').show();
+      $('circle[data-type="closed"] ~ text').hide();
+
+      $('.sideBar').empty();
+    }
+  </script>
+
 		<div class='page'>
 			<div> <input id = 'resetMe' type="reset" onclick='resetFunc()' value="Reset"></div>
 			<div align='center' id="psl_graph"></div>

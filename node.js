@@ -117,37 +117,40 @@ function main() {
         	.on('mouseover', tip.show)
         	.on('mouseout', tip.hide)
          	.on('click', function(element) {
-			// Removing all text for circle and sidebar.
-		       $('circle ~ text').hide();
-		       $('.sideBar').empty();	// Removing all element inside g
-		       // All element.
-		       $('circle').css('opacity', OTHER_NODE_OPACITY);;
-		       $('circle').css('stroke-width', '0px');
-		       $('line').hide();
+          		// Removing all text for circle and sidebar.
+               $('circle ~ text').hide();
+               $('.sideBar').empty();	// Removing all element inside g
+               // All element.
+               $('circle').css('opacity', OTHER_NODE_OPACITY);;
+               $('circle').css('stroke-width', '0px');
+               $('line').hide();
 
-		       // Neighbors and rules to display.
-		       var links = $('line[data-target="' + element.groundAtom + '"]');
+               // Neighbors and rules to display.
+               var links = $('line[data-target="' + element.groundAtom + '"]');
 
 
 
-		       links.each(function(index) {
-			  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
-			  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
-			  
-			 // Making neighboring node's text show 
-			  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"] ~ text').show();
-			  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"] ~ text').show();
+             // Add button inside sidebar div
+               $('.sideBar').append('<button type="button" id = "unselect" onclick=reset()> Unselect All </button>' );
+               links.each(function(index) {
+                  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+                  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+                
+               // Making neighboring node's text show 
+                  $('circle[data-atom="' + links[index].getAttribute('data-source') + '"] ~ text').show();
+                  $('circle[data-atom="' + links[index].getAttribute('data-target') + '"] ~ text').show();
 
-			  $('.sideBar').append('<p>' + links[index].getAttribute('data-rule') + '</p>');
-               });
+                  $('.sideBar').append('<p>' + links[index].getAttribute('data-rule') + '</p>');
+                });
 
-               // Self.
-               $('circle[data-atom="' + element.groundAtom + '"]').css('opacity', SELF_NODE_OPACITY);
-               $('circle[data-atom="' + element.groundAtom + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
-               $('line[data-target="' + element.groundAtom + '"]').show();
-       
-               // Add text to clicked node 
-               $('circle[data-atom="' + element.groundAtom + '"] ~ text').show();
+                   // Self.
+                   $('circle[data-atom="' + element.groundAtom + '"]').css('opacity', SELF_NODE_OPACITY);
+                   $('circle[data-atom="' + element.groundAtom + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
+                   $('line[data-target="' + element.groundAtom + '"]').show();
+           
+                   // Add text to clicked node 
+                   $('circle[data-atom="' + element.groundAtom + '"] ~ text').show();
+
        })
 ;
 
@@ -174,6 +177,13 @@ simulation.force("link")
       	  .links(links);
 
 simulation.on("tick", ticked);
+
+function reset(){
+
+  $('circle').css('opacity', 1.0);
+
+
+}
 
 
 //This function is called to update position of node-link
