@@ -17,23 +17,6 @@
 	<body>
 
 
-  <script>
-    function reset(){
-      // Setting the opacity and stroke width of all nodes to default
-      $('circle').css('opacity', 1.0);
-      $('circle').css('stroke-width', 2.0);
-
-      // Showing all the lines
-      $('line').show();
-      // Showing text of open nodes
-      $('circle ~ text').show();
-      $('circle[data-type="closed"] ~ text').hide();
-
-      $('.sideBar').empty();
-      $('.sideBar').append('<input type="text" name="FirstName" id="search"><br>');
-    }
-  </script>
-
 		<div class='page'>
 			<div align='center' id="psl_graph"></div>
 			<div id = 'sideBar' class = 'sideBar'></div>
