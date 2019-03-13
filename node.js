@@ -36,7 +36,7 @@ function main() {
 	var showRule = d3.tip()
 			.attr('class', 'd3-tip')
 			.html(function(d){
-				return 'Rule' + d.rule;
+				return 'satisfaction: ' + d.satisfaction;
 			});
 
 
@@ -87,12 +87,13 @@ function main() {
    // Adding all link data into
 	var link = svg.selectAll(".link")
 			.data(links)
-         		.enter()
-         		.append("line")
-         		.attr("class", "link")
-         		.attr("data-source", function(edge) { return edge.source; })
-         		.attr("data-target", function(edge) { return edge.target; })
+     		.enter()
+     		.append("line")
+     		.attr("class", "link")
+     		.attr("data-source", function(edge) { return edge.source; })
+     		.attr("data-target", function(edge) { return edge.target; })
 			.attr("data-rule", function(d){ return d.rule;})
+			.attr("data-satisfaction", function(d){return d.satisfaction;})
 			.on('mouseover', showRule.show)
 			.on('mouseout', showRule.hide) 
    ;
@@ -173,7 +174,7 @@ function main() {
 }
 
 
-
+//Unselecting the node
 function reset(){
   // Setting the opacity and stroke width of all nodes to default
   $('circle').css('opacity', 1.0);
@@ -197,6 +198,7 @@ function findNode(arg) {
 }
 
 
+// Selecting the node that you clicked / searched up
 function selectNode(groundAtom) {
     // Removing all text for circle and sidebar.
      $('circle ~ text').hide();
@@ -221,7 +223,7 @@ function selectNode(groundAtom) {
         $('circle[data-atom="' + links[index].getAttribute('data-source') + '"] ~ text').show();
         $('circle[data-atom="' + links[index].getAttribute('data-target') + '"] ~ text').show();
 
-        $('.sideBar').append('<p>' + links[index].getAttribute('data-rule') + '</p>');
+        $('.sideBar').append('<p>' + links[index].getAttribute('data-rule') + " : " + links[index].getAttribute('data-satisfaction') +  '</p>');
       });
 
          // Self.
