@@ -36,7 +36,7 @@ function main() {
 	var showRule = d3.tip()
 			.attr('class', 'd3-tip')
 			.html(function(d){
-				return 'satisfaction: ' + d.satisfaction;
+				return 'Rule: ' + d.rule;
 			});
 
 
