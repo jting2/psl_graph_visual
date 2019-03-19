@@ -29,7 +29,7 @@ function main() {
   			.attr('class', 'd3-tip')
  			
    			.html(function(d) {
-    			return "Type: " + d.type ;
+    			return "Value: " + d.value ;
   			});
 
 
@@ -197,6 +197,19 @@ function findNode(arg) {
   console.log('circle[data-atom="' + arg.value + '"]');
 }
 
+function selectNeighbor(links) {
+    links.each(function(index) {
+    console.log('HERE');
+    $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+    $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
+  
+ // Making neighboring node's text show 
+    $('circle[data-atom="' + links[index].getAttribute('data-source') + '"] ~ text').show();
+    $('circle[data-atom="' + links[index].getAttribute('data-target') + '"] ~ text').show();
+
+    $('.sideBar').append('<p>' + links[index].getAttribute('data-rule') + " : " + links[index].getAttribute('data-satisfaction') +  '</p>');
+  });
+}
 
 // Selecting the node that you clicked / searched up
 function selectNode(groundAtom) {
@@ -209,28 +222,21 @@ function selectNode(groundAtom) {
      $('line').hide();
 
      // Neighbors and rules to display.
-     var links = $('line[data-target="' + groundAtom + '"]');
+     var targetLinks = $('line[data-target="' + groundAtom + '"]');
+     var sourceLinks = $('line[data-source="' + groundAtom + '"]');
 
 
 
    // Add button inside sidebar div
      $('.sideBar').append('<button type="button" id = "unselect" onclick=reset()> Unselect All </button>' );
-     links.each(function(index) {
-        $('circle[data-atom="' + links[index].getAttribute('data-source') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
-        $('circle[data-atom="' + links[index].getAttribute('data-target') + '"]').css('opacity', NEIGHBOR_NODE_OPACITY);
-      
-     // Making neighboring node's text show 
-        $('circle[data-atom="' + links[index].getAttribute('data-source') + '"] ~ text').show();
-        $('circle[data-atom="' + links[index].getAttribute('data-target') + '"] ~ text').show();
-
-        $('.sideBar').append('<p>' + links[index].getAttribute('data-rule') + " : " + links[index].getAttribute('data-satisfaction') +  '</p>');
-      });
-
+     selectNeighbor(targetLinks);
+     selectNeighbor(sourceLinks);
          // Self.
          $('circle[data-atom="' + groundAtom + '"]').css('opacity', SELF_NODE_OPACITY);
          $('circle[data-atom="' + groundAtom + '"]').css('stroke-width', SELECTED_NODE_STOKE_WIDTH);
-         $('line[data-target="' + groundAtom + '"]').show();
- 
+         $('line[data-target="' + groundAtom + '"]').show();  
+ 		 $('line[data-source="' + groundAtom + '"]').show();
+         
          // Add text to clicked node 
          $('circle[data-atom="' + groundAtom + '"] ~ text').show();
 
